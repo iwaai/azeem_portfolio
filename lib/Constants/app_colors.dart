@@ -15,6 +15,7 @@ class AppColors
         focusColor: primaryColor,
         primaryColorDark: Colors.black,
         primaryColorLight: primaryColor,
+        hoverColor: primaryColor,
         scrollbarTheme: ScrollbarThemeData(
           thumbColor: MaterialStatePropertyAll(primaryColor),
           trackColor: MaterialStatePropertyAll(Colors.grey.shade300),
@@ -121,6 +122,7 @@ class AppColors
         focusColor: Colors.black,
         primaryColorDark: Colors.white,
         primaryColorLight: Colors.grey.shade900,
+        hoverColor: primaryColor,
         scrollbarTheme: ScrollbarThemeData(
           // thumbVisibility: MaterialStatePropertyAll(true),
           // trackVisibility: MaterialStatePropertyAll(true),
@@ -224,7 +226,8 @@ class AppColors
         ),
         progressIndicatorTheme: ProgressIndicatorThemeData(
             color: Colors.white,
-            refreshBackgroundColor: primaryColor
+            refreshBackgroundColor: primaryColor,
+
         ),
         cardColor: Colors.grey.withOpacity(0.3),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(

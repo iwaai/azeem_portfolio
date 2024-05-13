@@ -1,3 +1,4 @@
+import '/Controllers/main_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bootstrap5/flutter_bootstrap5.dart';
@@ -22,19 +23,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<ThemeController>(
+      autoRemove: false,
       builder: (theme) {
-        SystemChrome.setSystemUIOverlayStyle( SystemUiOverlayStyle(
-            statusBarBrightness: (theme.darkMode) ? Brightness.dark : Brightness.light,
-            statusBarIconBrightness: (theme.darkMode) ? Brightness.light : Brightness.dark,
-            statusBarColor: (theme.darkMode) ? Colors.black : Colors.white
-        ));
+
         return FlutterBootstrap5(
             builder: (ctx) {
               return GetMaterialApp(
                 debugShowCheckedModeBanner: false,
                 initialBinding: InitialBindings(),
                 title: 'Abdul Rehman - Flutter Developer',
-                initialRoute: Routes.splashView,
+                initialRoute: Routes.mainView,
                 routes: AppPages.routes,
                 builder: (context, child) {
                   return MediaQuery(
@@ -60,6 +58,7 @@ class InitialBindings implements Bindings
   @override
   void dependencies() {
     Get.lazyPut(() => ThemeController(), fenix: true);
+    Get.lazyPut(() => MainController(), fenix: true);
   }
 
 }

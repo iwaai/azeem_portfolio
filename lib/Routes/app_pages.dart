@@ -1,11 +1,12 @@
+import 'package:abdulrehman/Views/main_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'app_routes.dart';
 
 class AppPages {
-  static const initialRoute = Routes.splashView;
+  static const initialRoute = Routes.mainView;
   static Map<String, WidgetBuilder> routes = {
-    // Routes.splashView: (context) => const SplashView(),
+    Routes.mainView: (context) => const MainView(),
   };
 }
 

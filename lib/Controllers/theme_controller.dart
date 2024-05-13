@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
 
@@ -8,6 +9,11 @@ class ThemeController extends GetxController {
 
   set darkMode(bool val){
     _darkMode = val;
+    SystemChrome.setSystemUIOverlayStyle( SystemUiOverlayStyle(
+        statusBarBrightness: _darkMode ? Brightness.dark : Brightness.light,
+        statusBarIconBrightness: _darkMode ? Brightness.light : Brightness.dark,
+        statusBarColor: _darkMode ? Colors.black : Colors.white
+    ));
     update();
   }
   @override
@@ -19,6 +25,11 @@ class ThemeController extends GetxController {
     if(Get.context != null){
       Brightness deviceThemeMode = MediaQuery.of(Get.context!).platformBrightness;
       _darkMode = deviceThemeMode == Brightness.light ? false : true;
+      SystemChrome.setSystemUIOverlayStyle( SystemUiOverlayStyle(
+          statusBarBrightness: _darkMode ? Brightness.dark : Brightness.light,
+          statusBarIconBrightness: _darkMode ? Brightness.light : Brightness.dark,
+          statusBarColor: _darkMode ? Colors.black : Colors.white
+      ));
       update();
     }
 
