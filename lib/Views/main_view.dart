@@ -14,6 +14,7 @@ class MainView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    print(size.width);
     return Scaffold(
       appBar: AppBar(
         title: const MyAppBar(),
@@ -43,7 +44,7 @@ class MainView extends StatelessWidget {
                       controller.selectedSection = 0;
                     },
                     borderRadius: const BorderRadius.only(topLeft: Radius.circular(6), bottomLeft: Radius.circular(6)),
-                    child: Ink(
+                    child: Container(
                       width: 40,
                       height: 50,
                       decoration: BoxDecoration(

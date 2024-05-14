@@ -24,7 +24,7 @@ class ServicesSection extends StatelessWidget {
               const Text("What I can do?", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
               const SizedBox(height: 20,),
               FB5Row(
-                  classNames: 'col-12 px-${Get.width <= mobileWidth ? "3" : "8"} align-items-center justify-content-center',
+                  classNames: 'col-12 px-${Get.width <= mobileWidth ? "2" : "8"} align-items-center justify-content-center',
                   children: controller.services.map((e) {
                     return FB5Col(
                       classNames: "col-12 col-md-6 col-lg-4 col-xl-3 m-3",

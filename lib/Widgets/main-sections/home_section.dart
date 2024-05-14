@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 import '/Constants/app_assets.dart';
 import '/Controllers/main_controller.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -25,15 +27,16 @@ class HomeSection extends StatelessWidget {
               classNames: 'col-12 align-items-center my-4',
               children: [
                 FB5Col(
-                  classNames: 'col-12 col-lg-6 col-xl-5 p-5',
+                  classNames: 'col-12 col-lg-6 col-xl-5 p-4',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          const Text("Welcome! hope you are doing well.", style: TextStyle(fontSize: 18),),
-                          const SizedBox(width: 5,),
+                          const Flexible(child: Text("Welcome! hope you are doing well.", style: TextStyle(fontSize: 17), overflow: TextOverflow.ellipsis,)),
+                          const SizedBox(width: 3,),
                           EntranceFader(
                             offset: const Offset(0, 0),
                             delay: const Duration(seconds: 2),
@@ -89,9 +92,9 @@ class HomeSection extends StatelessWidget {
                                        await launchUrl(Uri.parse(e.url), mode: LaunchMode.externalApplication);
                                      }
                                   },
-                                  child: SvgPicture.asset(e.icon, width: 40, height: 40, color: Theme.of(context).textTheme.bodyMedium?.color,),
+                                  child: SvgPicture.asset(e.icon, width: 35, height: 35, color: Theme.of(context).textTheme.bodyMedium?.color,),
                                 ),
-                                const SizedBox(width: 20,),
+                                const SizedBox(width: 12,),
                               ],
                             );
                           }).toList(),
@@ -118,11 +121,11 @@ class HomeSection extends StatelessWidget {
                         JellyAnim(
                           jellyCount: 2,
                           // radius: 50,
-                          radius: Get.width < mobileWidth ? 250 : 300,
+                          radius: Get.width < mobileWidth ? 180 : 300,
                           // allowOverFlow: true,
                           jellyPosition: JellyPosition.bottomCenter,
 
-                          viewPortSize: const  Size(600, 600),
+                          viewPortSize: Get.width < mobileWidth ? const Size(400, 400): const  Size(600, 600),
 
                           colors: [Theme.of(context).primaryColor, Colors.grey],
                           jellyCoordinates: 5,

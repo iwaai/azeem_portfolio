@@ -18,10 +18,10 @@ class AboutSection extends StatelessWidget {
         autoRemove: false,
         builder: (controller){
           return FB5Row(
-              classNames: 'col-12 px-${Get.width <= mobileWidth ? "3" : "8"}',
+              classNames: 'col-12 px-${Get.width <= mobileWidth ? "2" : "8"}',
               children: [
                 FB5Col(
-                    classNames: 'col-12 col-lg-4 col-xl-4 p-5',
+                    classNames: 'col-12 col-lg-4 col-xl-4 p-4',
                     child: Get.width <= mobileWidth ? Container(
                       width: 300,
                       height: 300,
@@ -47,7 +47,7 @@ class AboutSection extends StatelessWidget {
                             // allowOverFlow: true,
                             jellyPosition: JellyPosition.bottomCenter,
 
-                            viewPortSize: const  Size(400, 500),
+                            viewPortSize: Get.width < mobileWidth ? const Size(400, 500): const  Size(400, 500),
 
                             colors: [Theme.of(context).primaryColor, Colors.brown],
                             jellyCoordinates: 5,
@@ -69,7 +69,7 @@ class AboutSection extends StatelessWidget {
                     )
                 ),
                 FB5Col(
-                    classNames: 'col-12 col-lg-8 col-xl-8 p-5',
+                    classNames: 'col-12 col-lg-8 col-xl-8 p-4',
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [

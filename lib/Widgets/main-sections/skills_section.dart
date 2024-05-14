@@ -16,10 +16,10 @@ class SkillsSection extends StatelessWidget {
         autoRemove: false,
         builder: (controller){
           return FB5Row(
-              classNames: 'col-12 px-${Get.width <= mobileWidth ? "3" : "8"} align-items-center',
+              classNames: 'col-12 px-${Get.width <= mobileWidth ? "2" : "8"} align-items-center',
               children: [
                 FB5Col(
-                    classNames: 'col-12 col-lg-4 col-xl-4 p-5',
+                    classNames: 'col-12 col-lg-4 col-xl-4 p-4',
                     child:
                     Container(
                       height: 350,
@@ -34,7 +34,7 @@ class SkillsSection extends StatelessWidget {
                     )
                 ),
                 FB5Col(
-                    classNames: 'col-12 col-lg-8 col-xl-8 p-5',
+                    classNames: 'col-12 col-lg-8 col-xl-8 p-4',
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
