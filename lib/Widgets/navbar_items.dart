@@ -34,8 +34,8 @@ class NavbarItems extends StatelessWidget {
                 FB5Col(
                   classNames: 'p-1',
                   child: OutlinedButton(
-                    onPressed: (){
-
+                    onPressed: ()async{
+                      await controller.hireMe();
                     },
                     child: const Text("Hire me", style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.bold, ),),
                   ),

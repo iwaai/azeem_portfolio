@@ -1,6 +1,9 @@
 import 'package:abdulrehman/Constants/dimensions.dart';
+import 'package:url_launcher/url_launcher.dart';
 
+import '../Models/service.dart';
 import '../Models/skill.dart';
+import '../Widgets/main-sections/services_section.dart';
 import '../Widgets/main-sections/skills_section.dart';
 import '/Constants/app_assets.dart';
 import '/Models/navbar_item.dart';
@@ -50,6 +53,7 @@ class MainController extends GetxController{
     HomeSection(),
     AboutSection(),
     SkillsSection(),
+    ServicesSection(),
   ];
   
   final List<Skill> skills = [
@@ -73,7 +77,17 @@ class MainController extends GetxController{
     Skill(title: "Flutter Windows", value: 7.0),
   ];
 
-  final String aboutPara = "With over three years of experience in software development, specializing in Flutter, Node.js, and Python, I am dedicated to crafting innovative solutions that empower businesses and enhance user experiences. My passion lies in leveraging cutting-edge technologies to create seamless mobile applications that meet the unique needs of clients across various industries. I thrive in collaborative environments where I can contribute my expertise in full-stack development to drive projects from conception to execution. Committed to staying at the forefront of emerging technologies, I continuously seek opportunities to expand my skills and knowledge, ensuring that my solutions are always at the forefront of industry standards. As a detail-oriented professional, I approach each project with precision and creativity, striving to exceed expectations and deliver exceptional results. With a proven track record of delivering high-quality software solutions, I am poised to tackle the challenges of tomorrow's digital landscape with confidence and enthusiasm. Let's connect and explore how I can help bring your vision to life.";
+
+  final List<Service> services = [
+    //add max 8 items for description
+    Service(icon: AppAssets.mobileAppDevelopmentIcon, title: "Mobile App Development", description: ['Flutter app development', 'Clean code with smooth states', 'Firebase integration', 'API integration', 'Responsive design', 'Deploy on store', 'app migration and cloning', 'maintenance and support'], startingFrom: "250"),
+    Service(icon: AppAssets.apiIcon, title: "Rest API Development (Node.js)", description: ['Rest API Development', 'Clean code with MVC pattern', 'email and other services', 'MySql Database', 'Mongo Database', 'Deploy on server', 'can handle VPS server with dockers', 'maintenance and support'], startingFrom: "200"),
+    Service(icon: AppAssets.webIcon, title: "Web Development (Flutter)", description: ['Single & multi page website', 'Fully responsive design', 'easily deployable on any hosting server', 'backend integration', 'Deploy on server', 'can handle VPS server with dockers', 'maintenance and support'], startingFrom: "2%0"),
+    Service(icon: AppAssets.deploymentIcon, title: "App Deployment", description: ['Deploy flutter android on Play Store', 'Deploy flutter iOS on App Store', 'Deploy flutter web on hosting server', 'Flutter windows app installer', 'maintenance and support'], startingFrom: "50"),
+    Service(icon: AppAssets.assistanceIcon, title: "Virtual Assistance", description: ['Flutter App Development', 'Cross-Platform Development', 'Technical Support', 'Code Review and Quality Assurance', 'Project Management', 'Training and Mentoring', 'Documentation and Reporting'], startingFrom: "150"),
+  ];
+
+  final String aboutPara = "With over 3 years of experience in software development, specializing in Flutter, Node.js, and Python, I am dedicated to crafting innovative solutions that empower businesses and enhance user experiences. My passion lies in leveraging cutting-edge technologies to create seamless mobile applications that meet the unique needs of clients across various industries. I thrive in collaborative environments where I can contribute my expertise in full-stack development to drive projects from conception to execution. Committed to staying at the forefront of emerging technologies, I continuously seek opportunities to expand my skills and knowledge, ensuring that my solutions are always at the forefront of industry standards. As a detail-oriented professional, I approach each project with precision and creativity, striving to exceed expectations and deliver exceptional results. With a proven track record of delivering high-quality software solutions, I am poised to tackle the challenges of tomorrow's digital landscape with confidence and enthusiasm. Let's connect and explore how I can help bring your vision to life.";
 
   //getters
   int get selectedSection => _selectedSection;
@@ -102,6 +116,9 @@ class MainController extends GetxController{
     if(index == 2){
       position = 600;
     }
+    else if(index == 3){
+      position = 800;
+    }
     if(Get.width <= mobileWidth){
       position += 700;
     }
@@ -110,5 +127,13 @@ class MainController extends GetxController{
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
+  }
+
+  hireMe()async{
+    await launchUrl(Uri.parse("https://www.upwork.com/freelancers/~0124249d5c292635ee?viewMode=1"), mode: LaunchMode.externalApplication);
+  }
+
+  downloadCV()async{
+    await launchUrl(Uri.parse("https://drive.google.com/file/d/1Xx61KQTcrByxeQE3X8JGtyeiIoMqqLrJ/view?usp=sharing"), mode: LaunchMode.externalApplication);
   }
 }

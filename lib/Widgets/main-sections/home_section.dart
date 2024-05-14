@@ -99,8 +99,8 @@ class HomeSection extends StatelessWidget {
                       ),
                       const SizedBox(height: 20,),
                       ElevatedButton.icon(
-                        onPressed: (){
-
+                        onPressed: ()async{
+                          await controller.downloadCV();
                         },
                         icon: const Icon(Icons.picture_as_pdf),
                         label: const Text("Download Resume", style: TextStyle(fontWeight: FontWeight.bold),),

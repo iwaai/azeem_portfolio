@@ -24,5 +24,10 @@ class AppAssets
   static const String myPic1 = "assets/images/mypic1.png";
   static const String myPic2 = "assets/images/mypic2.png";
   static const String toolsImage = "assets/images/tools.png";
+  static const String mobileAppDevelopmentIcon = "assets/images/mobileAppDevelopmentIcon.svg";
+  static const String assistanceIcon = "assets/images/assistanceIcon.svg";
+  static const String apiIcon = "assets/images/apiIcon.svg";
+  static const String deploymentIcon = "assets/images/deploymentIcon.svg";
+  static const String webIcon = "assets/images/webIcon.svg";
 
 }

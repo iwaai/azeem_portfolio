@@ -1,7 +1,6 @@
-import 'package:abdulrehman/Constants/app_assets.dart';
-import 'package:abdulrehman/Controllers/main_controller.dart';
-import 'package:abdulrehman/Widgets/navbar_logo.dart';
-import 'package:flutter/cupertino.dart';
+import '/Constants/app_assets.dart';
+import '/Controllers/main_controller.dart';
+import '/Widgets/navbar_logo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -55,8 +54,8 @@ class AppDrawer extends StatelessWidget {
 
               const SizedBox(height: 15,),
               OutlinedButton(
-                  onPressed: (){
-
+                  onPressed: ()async{
+                    await controller.hireMe();
                   },
                   child: const Text("Hire Me", style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Poppins',),)
               )
