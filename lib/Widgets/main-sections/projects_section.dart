@@ -52,7 +52,7 @@ class ProjectsSection extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              height: 200,
+                              height: 170,
                               decoration: BoxDecoration(
                                 borderRadius: const BorderRadius.only(topLeft: Radius.circular(8), topRight: Radius.circular(8)),
                                 image: DecorationImage(
@@ -67,7 +67,7 @@ class ProjectsSection extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(e.title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),),
-                                  Text(e.shortDescription, style: const TextStyle(fontSize: 14), maxLines: 3, textAlign: TextAlign.justify, overflow: TextOverflow.ellipsis,),
+                                  Text(e.shortDescription, style: const TextStyle(fontSize: 14), maxLines: 4, textAlign: TextAlign.justify, overflow: TextOverflow.ellipsis,),
                                 ],
                               ),
                             ),
@@ -185,7 +185,7 @@ class _ProjectDetailsView extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(height: 5,),
+        const SizedBox(height: 10,),
         Wrap(
           alignment: WrapAlignment.spaceBetween,
           runSpacing: 10,

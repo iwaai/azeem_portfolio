@@ -106,4 +106,95 @@ class AppAssets
   static const String project4Image6 = "assets/project_images/project4Image6.png";
   static const String project4Image7 = "assets/project_images/project4Image7.png";
   static const String project4Image8 = "assets/project_images/project4Image8.png";
+
+  //project 5
+  static const String coverImageProject5 = "assets/project_images/coverImageProject5.png";
+  static const String project5Image1 = "assets/project_images/project5Image1.png";
+  static const String project5Image2 = "assets/project_images/project5Image2.png";
+  static const String project5Image3 = "assets/project_images/project5Image3.png";
+  static const String project5Image4 = "assets/project_images/project5Image4.png";
+  static const String project5Image5 = "assets/project_images/project5Image5.png";
+  static const String project5Image6 = "assets/project_images/project5Image6.png";
+  static const String project5Image7 = "assets/project_images/project5Image7.png";
+  static const String project5Image8 = "assets/project_images/project5Image8.png";
+  static const String project5Image9 = "assets/project_images/project5Image9.png";
+  static const String project5Image10 = "assets/project_images/project5Image10.png";
+  static const String project5Image11 = "assets/project_images/project5Image11.png";
+  static const String project5Image12 = "assets/project_images/project5Image12.png";
+  static const String project5Image13 = "assets/project_images/project5Image13.png";
+  static const String project5Image14 = "assets/project_images/project5Image14.png";
+  static const String project5Image15 = "assets/project_images/project5Image15.png";
+  static const String project5Image16 = "assets/project_images/project5Image16.png";
+  static const String project5Image17 = "assets/project_images/project5Image17.png";
+
+  //project 6
+  static const String coverImageProject6 = "assets/project_images/coverImageProject6.png";
+  static const String project6Image1 = "assets/project_images/project6Image1.png";
+  static const String project6Image2 = "assets/project_images/project6Image2.png";
+  static const String project6Image3 = "assets/project_images/project6Image3.png";
+  static const String project6Image4 = "assets/project_images/project6Image4.png";
+  static const String project6Image5 = "assets/project_images/project6Image5.png";
+  static const String project6Image6 = "assets/project_images/project6Image6.png";
+  static const String project6Image7 = "assets/project_images/project6Image7.png";
+  static const String project6Image8 = "assets/project_images/project6Image8.png";
+  static const String project6Image9 = "assets/project_images/project6Image9.png";
+  static const String project6Image10 = "assets/project_images/project6Image10.png";
+  static const String project6Image11 = "assets/project_images/project6Image11.png";
+  static const String project6Image12 = "assets/project_images/project6Image12.png";
+  static const String project6Image13 = "assets/project_images/project6Image13.png";
+  static const String project6Image14 = "assets/project_images/project6Image14.png";
+  static const String project6Image15 = "assets/project_images/project6Image15.png";
+
+  //project 7
+  static const String coverImageProject7 = "assets/project_images/coverImageProject7.png";
+  static const String project7Image1 = "assets/project_images/project7Image1.png";
+  static const String project7Image2 = "assets/project_images/project7Image2.png";
+  static const String project7Image3 = "assets/project_images/project7Image3.png";
+  static const String project7Image4 = "assets/project_images/project7Image4.png";
+  static const String project7Image5 = "assets/project_images/project7Image5.png";
+  static const String project7Image6 = "assets/project_images/project7Image6.png";
+  static const String project7Image7 = "assets/project_images/project7Image7.png";
+  static const String project7Image8 = "assets/project_images/project7Image8.png";
+  static const String project7Image9 = "assets/project_images/project7Image9.png";
+  static const String project7Image10 = "assets/project_images/project7Image10.png";
+  static const String project7Image11 = "assets/project_images/project7Image11.png";
+
+  //project 8
+  static const String coverImageProject8 = "assets/project_images/coverImageProject8.png";
+  static const String project8Image1 = "assets/project_images/project8Image1.png";
+  static const String project8Image2 = "assets/project_images/project8Image2.png";
+  static const String project8Image3 = "assets/project_images/project8Image3.png";
+  static const String project8Image4 = "assets/project_images/project8Image4.png";
+  static const String project8Image5 = "assets/project_images/project8Image5.png";
+  static const String project8Image6 = "assets/project_images/project8Image6.png";
+  static const String project8Image7 = "assets/project_images/project8Image7.png";
+  static const String project8Image8 = "assets/project_images/project8Image8.png";
+  static const String project8Image9 = "assets/project_images/project8Image9.png";
+  static const String project8Image10 = "assets/project_images/project8Image10.png";
+
+  //project 9
+  static const String coverImageProject9 = "assets/project_images/coverImageProject9.png";
+  static const String project9Image1 = "assets/project_images/project9Image1.png";
+  static const String project9Image2 = "assets/project_images/project9Image2.png";
+  static const String project9Image3 = "assets/project_images/project9Image3.png";
+  static const String project9Image4 = "assets/project_images/project9Image4.png";
+
+  //project 10
+  static const String coverImageProject10 = "assets/project_images/coverImageProject10.png";
+  static const String project10Image1 = "assets/project_images/project10Image1.png";
+  static const String project10Image2 = "assets/project_images/project10Image2.png";
+  static const String project10Image3 = "assets/project_images/project10Image3.png";
+  static const String project10Image4 = "assets/project_images/project10Image4.png";
+  static const String project10Image5 = "assets/project_images/project10Image5.png";
+  static const String project10Image6 = "assets/project_images/project10Image6.png";
+  static const String project10Image7 = "assets/project_images/project10Image7.png";
+  static const String project10Image8 = "assets/project_images/project10Image8.png";
+  static const String project10Image9 = "assets/project_images/project10Image9.png";
+  static const String project10Image10 = "assets/project_images/project10Image10.png";
+  static const String project10Image11 = "assets/project_images/project10Image11.png";
+  static const String project10Image12 = "assets/project_images/project10Image12.png";
+  static const String project10Image13 = "assets/project_images/project10Image13.png";
+  static const String project10Image14 = "assets/project_images/project10Image14.png";
+  static const String project10Image15 = "assets/project_images/project10Image15.png";
+ 
 }

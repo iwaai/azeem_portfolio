@@ -64,7 +64,7 @@ class _ProjectCarouselState extends State<ProjectCarousel> {
     double viewportFraction = 1.0;
     if(widget.isWeb == false){
       if(Get.width > 500){
-        viewportFraction = 0.21;
+        viewportFraction = 0.22;
       }
     }
     return SizedBox(

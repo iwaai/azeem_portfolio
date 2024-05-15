@@ -244,6 +244,329 @@ class MainController extends GetxController{
         url: "https://hr-portal-tau.vercel.app/",
         isWeb: true
     ),
+    Project(
+        title: "Malaysian Products–Luxury Shop",
+        shortDescription: "Developed a comprehensive E-commerce application using Flutter, featuring user authentication, product catalog, detailed product pages, shopping cart, and order tracking. Integrated backend APIs for efficient data management, ensuring a seamless and secure shopping experience.",
+        longDescription: '''
+        <h2>Introduction:</h2>
+        <p>I developed a comprehensive E-commerce application using Flutter, designed to provide an intuitive and seamless shopping experience. This app integrates a wide range of features to enhance user engagement and ensure smooth and secure transactions. The backend APIs were implemented to manage the application data efficiently.</p>
+        
+        <h2>Key Features</h2>
+        <ul>
+          <li><strong>User Authentication</strong>: The app supports multiple authentication methods, including Email, Facebook, Google, and Apple, ensuring a secure and convenient login experience for users.</li>
+          <li><strong>Product Catalog</strong>: Users can browse a wide range of products categorized and filtered based on various attributes to help them find exactly what they are looking for.</li>
+          <li><strong>Product Details</strong>: Each product page includes high-quality images, detailed descriptions, and user reviews to provide comprehensive information and assist in decision-making.</li>
+          <li><strong>Shopping Cart and Checkout</strong>: A streamlined shopping cart and checkout process, including multiple payment gateway integrations, ensures a smooth purchasing experience.</li>
+          <li><strong>Order Tracking</strong>: Users can track their orders with an interactive timeline, providing real-time updates on the status of their deliveries.</li>
+          <li><strong>Push Notifications</strong>: The app sends push notifications for promotions, order updates, and other relevant information to keep users engaged and informed.</li>
+          <li><strong>User Profile Management</strong>: Users can manage their profiles, update personal information, and view their order history within the app.</li>
+          <li><strong>Advanced Search</strong>: The app features a powerful search functionality with autocomplete suggestions to help users find products quickly and easily.</li>
+          <li><strong>Social Sharing</strong>: Users can share their favorite products on various social media platforms, enhancing the app's reach and engagement.</li>
+          <li><strong>Wishlist Management</strong>: Users can add products to their wishlist for future reference and easy access.</li>
+          <li><strong>Rating and Review System</strong>: A comprehensive rating and review system allows users to share their feedback and read others' experiences, fostering a trustworthy shopping environment.</li>
+          <li><strong>Multi-Language Support</strong>: The app supports multiple languages, catering to a diverse user base and ensuring accessibility for users from different regions.</li>
+          <li><strong>Responsive Design</strong>: The app's design is optimized for both mobile and tablet devices, providing a consistent and user-friendly experience across different screen sizes.</li>
+          <li><strong>Google Maps Integration</strong>: The app integrates with Google Maps to provide a store locator feature, helping users find physical store locations easily.</li>
+        </ul>
+      
+        <h2>Conclusion</h2>
+        <p>This E-commerce application showcases advanced Flutter development skills, integrating a variety of functionalities to deliver a high-performance, user-friendly, and secure shopping experience. The backend APIs efficiently manage the application data, demonstrating a deep understanding of modern app development practices and backend integration.</p>
+        ''',
+        coverImage: AppAssets.coverImageProject5,
+        images: [AppAssets.project5Image1, AppAssets.project5Image2, AppAssets.project5Image3, AppAssets.project5Image4, AppAssets.project5Image5, AppAssets.project5Image6, AppAssets.project5Image7, AppAssets.project5Image8, AppAssets.project5Image9, AppAssets.project5Image10, AppAssets.project5Image11, AppAssets.project5Image12, AppAssets.project5Image13, AppAssets.project5Image14, AppAssets.project5Image15, AppAssets.project5Image16, AppAssets.project5Image17],
+        isWeb: false,
+        url: "https://play.google.com/store/apps/details?id=com.malaysia.MalaysianProduct"
+    ),
+    Project(
+        title: "IELTS Preparation App",
+        shortDescription: "Developed an IELTS preparation app with Flutter and GetX, featuring quizzes, speaking and writing practice, reading materials, listening lessons, and a comprehensive vocabulary section. It also includes band score definitions, a calculator, and essential IELTS tips.",
+        longDescription: '''
+        <h1>1K + Downloads on Play Store</h1>
+        <h2>Introduction</h2>
+          <p>I developed a comprehensive IELTS preparation application using Flutter and GetX for state management. This app is designed to provide a complete solution for users aiming to improve their English language skills and prepare effectively for the IELTS exam. Below are the detailed features and functionalities included in the app.</p>
+        
+          <div class="section">
+            <h2>Quiz Section</h2>
+            <p>The app includes IELTS quizzes with multiple choice questions categorized into three levels: Beginners, Intermediate, and Advanced. At the end of each quiz, users can review the actual answers, enabling them to learn from their mistakes and improve their knowledge.</p>
+          </div>
+        
+          <div class="section">
+            <h2>Speaking Improvement Feature</h2>
+            <p>This feature helps users enhance their English speaking skills. Users are provided with a paragraph to read aloud. The app records their voice and stores the audio files for future reference and practice.</p>
+          </div>
+        
+          <div class="section">
+            <h2>Writing Practice</h2>
+            <p>The writing section offers various topics for users to write about. Each topic includes an example answer to guide users. This feature helps users practice and improve their writing skills, which are crucial for the IELTS exam.</p>
+          </div>
+        
+          <div class="section">
+            <h2>Reading Materials</h2>
+            <p>The app includes a rich collection of reading materials to enhance users' comprehension skills:</p>
+            <ul>
+              <li>Essays</li>
+              <li>Stories</li>
+              <li>American Slangs</li>
+              <li>Irregular Verbs</li>
+              <li>Articles and Publications</li>
+            </ul>
+          </div>
+        
+          <div class="section">
+            <h2>Listening Section</h2>
+            <p>The listening section is divided into three levels: Beginners, Intermediate, and Advanced. Each level contains different lessons. The Text to Speech feature is used in this section to provide users with clear and accurate pronunciation. Additionally, the app includes English TV talk shows to further improve users' listening skills.</p>
+          </div>
+        
+          <div class="section">
+            <h2>Vocabulary Building</h2>
+            <p>This section includes a comprehensive vocabulary list with over 5000 words. For each word, the app provides:</p>
+            <ul>
+              <li>Word type</li>
+              <li>Definition</li>
+              <li>Text to Speech option</li>
+            </ul>
+            <p>Users can also favorite, translate, copy, and share words. Additionally, the app includes Proverbs and Idioms to help users understand and use English more naturally.</p>
+          </div>
+        
+          <div class="section">
+            <h2>Band Score Definitions and Calculator</h2>
+            <p>The app provides definitions of different band scores to help users understand the scoring system of the IELTS exam. It also includes a band calculator to estimate their potential score based on their practice performance.</p>
+          </div>
+        
+          <div class="section">
+            <h2>IELTS Tips and Tricks</h2>
+            <p>This section offers valuable tips and tricks for IELTS preparation, helping users to strategize and approach their studies more effectively.</p>
+          </div>
+        
+          <div class="section">
+            <h2>Backend and Data Management</h2>
+            <p>The application uses SQLite as the backend database to efficiently manage and store user data and app content. This ensures quick data retrieval and smooth app performance.</p>
+          </div>
+        
+          <h2>Conclusion</h2>
+          <p>This IELTS preparation app is a comprehensive tool designed to help users improve their English language skills across all aspects: reading, writing, listening, and speaking. With a wide range of features and a user-friendly interface, it serves as an effective solution for anyone aiming to achieve a high score in the IELTS exam.</p>
+        
+        ''',
+        coverImage: AppAssets.coverImageProject6,
+        images: [AppAssets.project6Image1, AppAssets.project6Image2, AppAssets.project6Image3, AppAssets.project6Image4, AppAssets.project6Image5, AppAssets.project6Image6, AppAssets.project6Image7, AppAssets.project6Image8, AppAssets.project6Image9, AppAssets.project6Image10, AppAssets.project6Image11, AppAssets.project6Image12, AppAssets.project6Image13, AppAssets.project6Image14, AppAssets.project6Image15,],
+        isWeb: false,
+        url: "https://play.google.com/store/apps/details?id=com.streamlogic.ielts_app"
+    ),
+    Project(
+        title: "Meal Over",
+        shortDescription: "Developed an IELTS preparation app with Flutter and GetX, featuring quizzes, speaking and writing practice, reading materials, listening lessons, and a comprehensive vocabulary section. It also includes band score definitions, a calculator, and essential IELTS tips.",
+        longDescription: '''
+        <h2>Introduction:</h2>
+          p>MealOver is a cutting-edge food delivery application designed to revolutionize the way users experience food ordering and delivery.</p>
+          <h2>Key Features:</h2>
+          <ul>
+              <li>User Authentication:
+                  <ul>
+                      <li>Secure phone number authentication via Firebase OTP for seamless login experience.</li>
+                  </ul>
+              </li>
+              <li>Intuitive User Interface:
+                  <ul>
+                      <li>User-friendly interface with easy navigation to browse offers, select items, and manage orders.</li>
+                  </ul>
+              </li>
+              <li>Order Management:
+                  <ul>
+                      <li>Efficient order management system allowing users to view previous orders, track current orders, and reorder favorite items.</li>
+                  </ul>
+              </li>
+              <li>Customizable Cart:
+                  <ul>
+                      <li>Dynamic cart functionality enabling users to add items, adjust quantities, select delivery addresses, and choose preferred delivery dates and time slots.</li>
+                  </ul>
+              </li>
+              <li>Rewards Program:
+                  <ul>
+                      <li>Weekly and monthly targets incentivizing users with reward points for achieving milestones, which can be redeemed during future orders.</li>
+                  </ul>
+              </li>
+          </ul>
+          <h2>Technology Stack:</h2>
+          <p>The MealOver app is built using the following technologies:</p>
+          <ul>
+              <li>Flutter: A versatile framework for cross-platform app development, ensuring a consistent user experience across Android and iOS platforms.</li>
+              <li>GetX: A state management library for Flutter, enhancing app performance and maintainability.</li>
+              <li>Node.js: A powerful backend runtime environment for building scalable and efficient server-side applications.</li>
+              <li>Firebase: A comprehensive platform providing authentication, database, and hosting services for seamless app development and deployment.</li>
+          </ul>
+          <p>Experience the convenience of ordering delicious meals at your fingertips with MealOver. Download the app now!</p>
+        ''',
+        coverImage: AppAssets.coverImageProject7,
+        images: [AppAssets.project7Image1, AppAssets.project7Image2, AppAssets.project7Image3, AppAssets.project7Image4, AppAssets.project7Image5, AppAssets.project7Image6, AppAssets.project7Image7, AppAssets.project7Image8, AppAssets.project7Image9, AppAssets.project7Image10, AppAssets.project7Image11, ],
+        isWeb: false,
+        url: "https://www.mediafire.com/file/fnqt7xu43w4itcn/mealover.apk/file"
+    ),
+    Project(
+        title: "Barcode & QR Code Scanner",
+        shortDescription: "Simplifying barcode and QR code tasks. Scan codes from camera or gallery. Generate QR codes for URLs, Wi-Fi, and more. Record history, share, and save codes with ease.",
+        longDescription: '''
+        <h2>Introduction</h2>
+         <p>QRGenX is a versatile mobile application that simplifies the process of scanning and generating barcodes and QR codes with ease.</p>
+        <h2>Key Features:</h2>
+        <ul>
+            <li>Scan Codes:
+                <ul>
+                    <li>Effortlessly scan barcodes and QR codes using the device camera or from images stored in the gallery.</li>
+                </ul>
+            </li>
+            <li>Generate Codes:
+                <ul>
+                    <li>Create QR codes for various purposes including website URLs, Wi-Fi credentials, social media profiles, text messages, contacts, phone numbers, emails, SMS, calendar events, business cards, PayPal links, and more.</li>
+                    <li>Generate barcodes for different categories, providing flexibility for diverse use cases.</li>
+                </ul>
+            </li>
+            <li>History:
+                <ul>
+                    <li>Record scanning and generation history for easy access to previously scanned or created codes.</li>
+                </ul>
+            </li>
+            <li>Share and Save:
+                <ul>
+                    <li>Share scanned or generated codes as text, copy to clipboard, share as image, or save as image for future reference.</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Technology Stack:</h2>
+        <p>The QRGenX app is developed using the following technologies:</p>
+        <ul>
+            <li>Flutter: A versatile framework for cross-platform app development, ensuring compatibility with both Android and iOS platforms.</li>
+            <li>Camera Plugin: Integration with camera plugin for Flutter to enable real-time code scanning.</li>
+            <li>Image Picker Plugin: Integration with image picker plugin for Flutter to allow code scanning from images stored in the device gallery.</li>
+        </ul>
+        <p>Experience the convenience of barcode and QR code scanning and generation at your fingertips with QRGenX. Download the app now!</p>
+        ''',
+        coverImage: AppAssets.coverImageProject8,
+        images: [AppAssets.project8Image1, AppAssets.project8Image2, AppAssets.project8Image3, AppAssets.project8Image4, AppAssets.project8Image5, AppAssets.project8Image6, AppAssets.project8Image7, AppAssets.project8Image8, AppAssets.project8Image9, AppAssets.project8Image10,],
+        isWeb: false,
+        url: "https://play.google.com/store/apps/details?id=com.techomatic.barcode_scanner"
+    ),
+    Project(
+        title: "English Stories",
+        shortDescription: "Offers a rich collection of English stories for children, ranging from fairy tales to folktales. With dark and light mode options, bookmarking, text-to-speech, zoom functionality, and easy sharing, StoryTale provides an immersive and enjoyable reading experience for kids of all ages.",
+        longDescription: '''
+        <h2>Introduction</h2>
+         <p>StoryTale is an engaging mobile application offering a wide collection of English stories for children of all ages. Dive into captivating narratives and let your imagination soar!</p>
+        <h2>Key Features:</h2>
+        <ul>
+            <li>Rich Story Collection:
+                <ul>
+                    <li>Explore a diverse range of stories curated for children, including fairy tales, folktales, fables, and more.</li>
+                </ul>
+            </li>
+            <li>Dark and Light Mode:
+                <ul>
+                    <li>Switch between dark and light themes to suit your reading preferences and enhance readability.</li>
+                </ul>
+            </li>
+            <li>Bookmarking:
+                <ul>
+                    <li>Bookmark your favorite stories for quick access and revisit them anytime.</li>
+                </ul>
+            </li>
+            <li>Text-to-Speech:
+                <ul>
+                    <li>Listen to stories with the built-in text-to-speech feature, providing an immersive reading experience.</li>
+                </ul>
+            </li>
+            <li>Zoom Functionality:
+                <ul>
+                    <li>Zoom in to view text and illustrations with ease, catering to users of all age groups.</li>
+                </ul>
+            </li>
+            <li>Share Stories:
+                <ul>
+                    <li>Share your favorite stories with friends and family through various social media and messaging platforms.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Experience the magic of storytelling with StoryTale. Download the app now and embark on unforgettable adventures!</p>
+        ''',
+        coverImage: AppAssets.coverImageProject9,
+        images: [AppAssets.project9Image1, AppAssets.project9Image2, AppAssets.project9Image3, AppAssets.project9Image4, ],
+        isWeb: false,
+        url: "https://play.google.com/store/apps/details?id=com.streamlogic.english.stories"
+    ),
+    Project(
+        title: "Sirat-e-Mustaqeem App",
+        shortDescription: "All-in-one Islamic app. Features include Allah's names, Quranic duas, prayer timings with notifications, Qibla direction, Surah collection, Six Kalma, favorites, dark/light theme, and multi-language support. Experience spiritual enrichment and convenience.",
+        longDescription: '''
+        <h2>Introduction</h2>
+         <p>Sirat-e-Mustaqeem is a comprehensive Islamic mobile application designed to assist users in practicing their faith and deepening their understanding of Islam. With a wide range of features, the app serves as a valuable companion for Muslims seeking guidance and inspiration in their daily lives.</p>
+        <h2>Key Features:</h2>
+        <ul>
+            <li>Allah Names:
+                <ul>
+                    <li>Discover and learn the beautiful names of Allah with detailed meanings and significance.</li>
+                </ul>
+            </li>
+            <li>Quranic Duas:
+                <ul>
+                    <li>Access a collection of supplications (Duas) from different chapters of the Holy Quran for various occasions and needs.</li>
+                </ul>
+            </li>
+            <li>Prayer Timings and Notifications:
+                <ul>
+                    <li>Stay updated with accurate prayer timings and receive timely notifications for the next prayer.</li>
+                </ul>
+            </li>
+            <li>Islamic Date:
+                <ul>
+                    <li>Track the Islamic date alongside the Gregorian calendar for religious observance and planning.</li>
+                </ul>
+            </li>
+            <li>Tasbih Counter:
+                <ul>
+                    <li>Engage in Dhikr with the Tasbih feature, allowing selection of Ayats from different Surahs of the Quran.</li>
+                </ul>
+            </li>
+            <li>Qibla Direction:
+                <ul>
+                    <li>Find the Qibla direction accurately to perform prayers in the right direction, no matter where you are.</li>
+                </ul>
+            </li>
+            <li>Important Surah Collection:
+                <ul>
+                    <li>Access a curated collection of five important Surahs for recitation and reflection.</li>
+                </ul>
+            </li>
+            <li>Six Kalma:
+                <ul>
+                    <li>Recite and memorize the Six Kalmas for spiritual enlightenment and devotion.</li>
+                </ul>
+            </li>
+            <li>Favorites:
+                <ul>
+                    <li>Bookmark your favorite Ayats, Surahs, Paras, Juz, Duas, Kalmas, and Allah's names for quick access and reference.</li>
+                </ul>
+            </li>
+            <li>Dark/Light Theme and Time Format:
+                <ul>
+                    <li>Customize your app experience with dark or light themes and choose between 12-hour and 24-hour time formats.</li>
+                </ul>
+            </li>
+            <li>Local Notifications:
+                <ul>
+                    <li>Receive local notifications for prayer timings, ensuring you never miss a prayer.</li>
+                </ul>
+            </li>
+            <li>Multi-language Support:
+                <ul>
+                    <li>Enjoy the app's content in multiple languages, catering to diverse user preferences.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Experience the guidance and blessings of Islam with Sirat-e-Mustaqeem. Download the app now and embark on a journey of spiritual growth and enlightenment!</p>
+        ''',
+        coverImage: AppAssets.coverImageProject10,
+        images: [AppAssets.project10Image1, AppAssets.project10Image2, AppAssets.project10Image3, AppAssets.project10Image4, AppAssets.project10Image5, AppAssets.project10Image6, AppAssets.project10Image7, AppAssets.project10Image8, AppAssets.project10Image9, AppAssets.project10Image10, AppAssets.project10Image11, AppAssets.project10Image12, AppAssets.project10Image13, AppAssets.project10Image14,],
+        isWeb: false,
+        url: "https://www.mediafire.com/file/fyatcu62r0a9c71/sirat-e-mustaqeem.apk/file"
+    ),
 
   ];
 
@@ -280,10 +603,10 @@ class MainController extends GetxController{
       position = 650;
     }
     else if(index == 4){
-      position = 750;
+      position = 650;
     }
     if(Get.width <= mobileWidth){
-      position += 700;
+      position += 650;
     }
     scrollController.animateTo(
       index * position, // Adjust the value as needed (depends on your item height)
