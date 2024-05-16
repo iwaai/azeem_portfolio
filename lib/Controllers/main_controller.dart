@@ -1,6 +1,8 @@
 import 'package:abdulrehman/Constants/dimensions.dart';
+import 'package:abdulrehman/Widgets/main-sections/experience_section.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../Models/experience.dart';
 import '../Models/project.dart';
 import '../Models/service.dart';
 import '../Models/skill.dart';
@@ -51,13 +53,14 @@ class MainController extends GetxController{
     NavbarItem(title: 'Education', icon: AppAssets.educationIcon),
     NavbarItem(title: 'Contact', icon: AppAssets.contactIcon),
   ];
+  bool _showAllProjects = false;
   final List<Widget> sections = const [
     HomeSection(),
     AboutSection(),
     SkillsSection(),
     ServicesSection(),
     ProjectsSection(),
-
+    ExperienceSection(),
   ];
   
   final List<Skill> skills = [
@@ -167,42 +170,6 @@ class MainController extends GetxController{
         coverImage: AppAssets.coverImageProject2,
         images: [AppAssets.project2Image1, AppAssets.project2Image2, AppAssets.project2Image3, AppAssets.project2Image4, AppAssets.project2Image5, AppAssets.project2Image6, AppAssets.project2Image7, AppAssets.project2Image8, AppAssets.project2Image9, AppAssets.project2Image10, AppAssets.project2Image11, AppAssets.project2Image12, AppAssets.project2Image13, AppAssets.project2Image14, AppAssets.project2Image15, AppAssets.project2Image16, AppAssets.project2Image17, AppAssets.project2Image18, AppAssets.project2Image19, AppAssets.project2Image20, AppAssets.project2Image21,],
         url: "https://play.google.com/store/apps/details?id=com.the1bm.the_one_facilities_app"
-    ),
-    Project(
-        title: "Service Booking Website",
-        shortDescription: "The Service Booking Website, developed with Flutter for web, facilitates seamless online service appointments. Employing Provider for MVVM architecture and Firebase backend ensures reliability and scalability.",
-        longDescription: '''
-        <h2>Introduction:</h2>
-        <p>The Service Booking Website is a user-friendly platform designed for seamless booking of various services. Built using Flutter for web, the website follows the MVVM architecture pattern with Provider for state management, ensuring robustness and scalability. Firebase is integrated as the backend, providing a secure and reliable data storage and authentication solution.</p>
-        
-        <h2>Key Features:</h2>
-        <ul>
-          <li><strong>Service Booking:</strong> Users can easily browse available services and book appointments online with just a few clicks, enhancing convenience and accessibility.</li>
-          
-          <li><strong>MVVM Architecture:</strong> The website is structured using the Model-View-ViewModel (MVVM) architectural pattern, promoting code organization, maintainability, and separation of concerns.</li>
-          
-          <li><strong>Provider State Management:</strong> Provider is utilized for state management, offering a simple and efficient way to manage and propagate application state throughout the website.</li>
-          
-          <li><strong>Firebase Integration:</strong> Firebase serves as the backend for the website, handling data storage, real-time updates, and user authentication, ensuring data security and reliability.</li>
-          
-          <li><strong>User-Friendly Interface:</strong> The website features an intuitive and responsive design, providing users with a seamless and enjoyable booking experience across devices.</li>
-        </ul>
-        
-        <h2>Technologies Used:</h2>
-        <ul>
-          <li>Flutter for Web (front-end)</li>
-          <li>Provider (for state management)</li>
-          <li>Firebase (for backend services)</li>
-        </ul>
-        
-        <h2>Conclusion:</h2>
-        <p>The Service Booking Website offers a modern and efficient solution for users to book services online. With its user-friendly interface, robust architecture, and seamless Firebase integration, the website provides a reliable and convenient platform for service providers and customers alike.</p>
-
-        ''',
-        coverImage: AppAssets.project4Image1,
-        images: [AppAssets.project4Image1, AppAssets.project4Image2, AppAssets.project4Image3, AppAssets.project4Image4, AppAssets.project4Image5, AppAssets.project4Image6, AppAssets.project4Image7, AppAssets.project4Image8,],
-        url: "https://the-one-facilities.vercel.app/#/Home",
-        isWeb: true
     ),
     Project(
         title: "IMS - HR Portal",
@@ -353,53 +320,40 @@ class MainController extends GetxController{
         url: "https://play.google.com/store/apps/details?id=com.streamlogic.ielts_app"
     ),
     Project(
-        title: "Meal Over",
-        shortDescription: "Developed an IELTS preparation app with Flutter and GetX, featuring quizzes, speaking and writing practice, reading materials, listening lessons, and a comprehensive vocabulary section. It also includes band score definitions, a calculator, and essential IELTS tips.",
+        title: "D-Share",
+        shortDescription: "D-Share is a seamless file sharing app built with Flutter, allowing users to share photos, videos, songs, files, and apps across various devices on the same network. Even without the app, users can receive data via a web browser using an IP address and port.",
         longDescription: '''
-        <h2>Introduction:</h2>
-          p>MealOver is a cutting-edge food delivery application designed to revolutionize the way users experience food ordering and delivery.</p>
-          <h2>Key Features:</h2>
-          <ul>
-              <li>User Authentication:
-                  <ul>
-                      <li>Secure phone number authentication via Firebase OTP for seamless login experience.</li>
-                  </ul>
-              </li>
-              <li>Intuitive User Interface:
-                  <ul>
-                      <li>User-friendly interface with easy navigation to browse offers, select items, and manage orders.</li>
-                  </ul>
-              </li>
-              <li>Order Management:
-                  <ul>
-                      <li>Efficient order management system allowing users to view previous orders, track current orders, and reorder favorite items.</li>
-                  </ul>
-              </li>
-              <li>Customizable Cart:
-                  <ul>
-                      <li>Dynamic cart functionality enabling users to add items, adjust quantities, select delivery addresses, and choose preferred delivery dates and time slots.</li>
-                  </ul>
-              </li>
-              <li>Rewards Program:
-                  <ul>
-                      <li>Weekly and monthly targets incentivizing users with reward points for achieving milestones, which can be redeemed during future orders.</li>
-                  </ul>
-              </li>
-          </ul>
-          <h2>Technology Stack:</h2>
-          <p>The MealOver app is built using the following technologies:</p>
-          <ul>
-              <li>Flutter: A versatile framework for cross-platform app development, ensuring a consistent user experience across Android and iOS platforms.</li>
-              <li>GetX: A state management library for Flutter, enhancing app performance and maintainability.</li>
-              <li>Node.js: A powerful backend runtime environment for building scalable and efficient server-side applications.</li>
-              <li>Firebase: A comprehensive platform providing authentication, database, and hosting services for seamless app development and deployment.</li>
-          </ul>
-          <p>Experience the convenience of ordering delicious meals at your fingertips with MealOver. Download the app now!</p>
+        <h2>Introduction</h2>
+        <p>D-Share is a powerful and user-friendly file sharing app built with Flutter. Share photos, videos, songs, files, and apps effortlessly across various devices.</p>
+        
+        <h2>Key Features:</h2>
+        <ul>
+            <li>Seamless sharing of photos, videos, songs, files, and apps across multiple devices.</li>
+            <li>Data sharing over the same network (e.g., both devices on the same Wi-Fi, or one on Wi-Fi and the other on Ethernet).</li>
+            <li>HTTP protocol-based data transfer using IP address and port number.</li>
+            <li>Receive data even without the app installed on the device by entering the IP address and port in a browser.</li>
+            <li>QR code scanning for quick and easy data reception if the app is installed.</li>
+            <li>View sending and receiving history for easy tracking of shared files.</li>
+        </ul>
+
+        <h2>How It Works:</h2>
+        <p>To share files with D-Share:</p>
+        <ul>
+            <li>Ensure both devices are connected to the same network.</li>
+            <li>Open D-Share and select the files you want to share.</li>
+            <li>If the recipient device has D-Share installed, scan the QR code to start receiving the files.</li>
+            <li>If the recipient device does not have D-Share installed, open a browser and enter the IP address with the port number displayed in D-Share.</li>
+            <li>The recipient can now download the files directly from the browser.</li>
+        </ul>
+
+        <h2>Download D-Share</h2>
+        <p>Start sharing files effortlessly with D-Share. Download now and experience seamless file sharing across your devices.</p>
+    
         ''',
-        coverImage: AppAssets.coverImageProject7,
-        images: [AppAssets.project7Image1, AppAssets.project7Image2, AppAssets.project7Image3, AppAssets.project7Image4, AppAssets.project7Image5, AppAssets.project7Image6, AppAssets.project7Image7, AppAssets.project7Image8, AppAssets.project7Image9, AppAssets.project7Image10, AppAssets.project7Image11, ],
+        coverImage: AppAssets.coverImageProject12,
+        images: [AppAssets.project12Image1, AppAssets.project12Image2, AppAssets.project12Image3, AppAssets.project12Image4, AppAssets.project12Image5, AppAssets.project12Image6, AppAssets.project12Image7, AppAssets.project12Image8, AppAssets.project12Image9, AppAssets.project12Image10, AppAssets.project12Image11],
         isWeb: false,
-        url: "https://www.mediafire.com/file/fnqt7xu43w4itcn/mealover.apk/file"
+        url: "https://play.google.com/store/apps/details?id=com.techomatic.dshare"
     ),
     Project(
         title: "Barcode & QR Code Scanner",
@@ -444,52 +398,6 @@ class MainController extends GetxController{
         images: [AppAssets.project8Image1, AppAssets.project8Image2, AppAssets.project8Image3, AppAssets.project8Image4, AppAssets.project8Image5, AppAssets.project8Image6, AppAssets.project8Image7, AppAssets.project8Image8, AppAssets.project8Image9, AppAssets.project8Image10,],
         isWeb: false,
         url: "https://play.google.com/store/apps/details?id=com.techomatic.barcode_scanner"
-    ),
-    Project(
-        title: "English Stories",
-        shortDescription: "Offers a rich collection of English stories for children, ranging from fairy tales to folktales. With dark and light mode options, bookmarking, text-to-speech, zoom functionality, and easy sharing, StoryTale provides an immersive and enjoyable reading experience for kids of all ages.",
-        longDescription: '''
-        <h2>Introduction</h2>
-         <p>StoryTale is an engaging mobile application offering a wide collection of English stories for children of all ages. Dive into captivating narratives and let your imagination soar!</p>
-        <h2>Key Features:</h2>
-        <ul>
-            <li>Rich Story Collection:
-                <ul>
-                    <li>Explore a diverse range of stories curated for children, including fairy tales, folktales, fables, and more.</li>
-                </ul>
-            </li>
-            <li>Dark and Light Mode:
-                <ul>
-                    <li>Switch between dark and light themes to suit your reading preferences and enhance readability.</li>
-                </ul>
-            </li>
-            <li>Bookmarking:
-                <ul>
-                    <li>Bookmark your favorite stories for quick access and revisit them anytime.</li>
-                </ul>
-            </li>
-            <li>Text-to-Speech:
-                <ul>
-                    <li>Listen to stories with the built-in text-to-speech feature, providing an immersive reading experience.</li>
-                </ul>
-            </li>
-            <li>Zoom Functionality:
-                <ul>
-                    <li>Zoom in to view text and illustrations with ease, catering to users of all age groups.</li>
-                </ul>
-            </li>
-            <li>Share Stories:
-                <ul>
-                    <li>Share your favorite stories with friends and family through various social media and messaging platforms.</li>
-                </ul>
-            </li>
-        </ul>
-        <p>Experience the magic of storytelling with StoryTale. Download the app now and embark on unforgettable adventures!</p>
-        ''',
-        coverImage: AppAssets.coverImageProject9,
-        images: [AppAssets.project9Image1, AppAssets.project9Image2, AppAssets.project9Image3, AppAssets.project9Image4, ],
-        isWeb: false,
-        url: "https://play.google.com/store/apps/details?id=com.streamlogic.english.stories"
     ),
     Project(
         title: "Sirat-e-Mustaqeem App",
@@ -567,19 +475,308 @@ class MainController extends GetxController{
         isWeb: false,
         url: "https://www.mediafire.com/file/fyatcu62r0a9c71/sirat-e-mustaqeem.apk/file"
     ),
+    Project(
+        title: "PetTag",
+        shortDescription: "PetTag is a free social app for pet owners, designed to help pets and their owners meet, socialize, and create lasting connections. Join us to swipe, like, meet new friends, and support animal shelters with 10% of our earnings donated to the ASPCA.",
+        longDescription: '''
+        <h2>Introduction</h2>
+        <p>PetTag is the FREE exclusive social app for pet owners. Pets are a big part of our lives and identity, so doesn’t it make sense to look for someone special for you and your pet? We are happy to bring you a unique communal experience that brings people and pets together!</p>
+        
+        <h2>Our Story</h2>
+        <p>It all began with five friends, five dogs, and play dates. While on one of these playdates, the question arose, “Do our puppies need more socializing?” This singular question from one of the founders took all five friends on a quest to find the answer.</p>
+        <p>The answer: They can never get too much socializing!</p>
+        <p>The next question was, “How do we find more like-minded people to meet?” So we decided to build a platform for owners and pets to Swipe, Like, Meet, and Socialize.</p>
 
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li><strong>Swipe and Like:</strong> Enjoyable swipe features similar to popular dating apps, but without the commitment or anxiety.</li>
+            <li><strong>PetWall:</strong> Post moments of your adventures with your matches!</li>
+            <li><strong>PackTrack and FindAPark:</strong> See what your matches are up to and find pet-friendly parks to hang out!</li>
+        </ul>
+        
+        <h2>Our Mission</h2>
+        <p>We want to make an impact and help pets who don’t have owners. We have made it our mission to donate 10% of our subscription earnings to the ASPCA.</p>
+        <div class="donation">
+            <p>Together, we can help save animals in shelters and bring the community closer. This journey started as a way to socialize with our dogs and has now become a way to bring people and pets together, to make new friends, and to help save animals in need.</p>
+        </div>
+        
+        <h2>Technology</h2>
+        <p>Our app utilizes Firebase as the backend to ensure real-time updates and seamless performance. We have implemented in-app purchases and integrated Google Maps for easy navigation to pet-friendly locations.</p>
+        
+        <h2>Join Us!</h2>
+        <p>We invite you and your pets to join our community. Together, let’s create memorable experiences, make new friends, and support animals in need. Download PetTag today and start your adventure!</p>
+    
+        ''',
+        coverImage: AppAssets.coverImageProject11,
+        images: [AppAssets.project11Image1, AppAssets.project11Image2, AppAssets.project11Image3, AppAssets.project11Image4, AppAssets.project11Image5, AppAssets.project11Image6, AppAssets.project11Image7, AppAssets.project11Image8, ],
+        isWeb: false,
+        url: "https://play.google.com/store/apps/details?id=com.pettag.utechware.socialapppettag"
+    ),
+    Project(
+        title: "Meal Over",
+        shortDescription: "Developed an IELTS preparation app with Flutter and GetX, featuring quizzes, speaking and writing practice, reading materials, listening lessons, and a comprehensive vocabulary section. It also includes band score definitions, a calculator, and essential IELTS tips.",
+        longDescription: '''
+        <h2>Introduction:</h2>
+          p>MealOver is a cutting-edge food delivery application designed to revolutionize the way users experience food ordering and delivery.</p>
+          <h2>Key Features:</h2>
+          <ul>
+              <li>User Authentication:
+                  <ul>
+                      <li>Secure phone number authentication via Firebase OTP for seamless login experience.</li>
+                  </ul>
+              </li>
+              <li>Intuitive User Interface:
+                  <ul>
+                      <li>User-friendly interface with easy navigation to browse offers, select items, and manage orders.</li>
+                  </ul>
+              </li>
+              <li>Order Management:
+                  <ul>
+                      <li>Efficient order management system allowing users to view previous orders, track current orders, and reorder favorite items.</li>
+                  </ul>
+              </li>
+              <li>Customizable Cart:
+                  <ul>
+                      <li>Dynamic cart functionality enabling users to add items, adjust quantities, select delivery addresses, and choose preferred delivery dates and time slots.</li>
+                  </ul>
+              </li>
+              <li>Rewards Program:
+                  <ul>
+                      <li>Weekly and monthly targets incentivizing users with reward points for achieving milestones, which can be redeemed during future orders.</li>
+                  </ul>
+              </li>
+          </ul>
+          <h2>Technology Stack:</h2>
+          <p>The MealOver app is built using the following technologies:</p>
+          <ul>
+              <li>Flutter: A versatile framework for cross-platform app development, ensuring a consistent user experience across Android and iOS platforms.</li>
+              <li>GetX: A state management library for Flutter, enhancing app performance and maintainability.</li>
+              <li>Node.js: A powerful backend runtime environment for building scalable and efficient server-side applications.</li>
+              <li>Firebase: A comprehensive platform providing authentication, database, and hosting services for seamless app development and deployment.</li>
+          </ul>
+          <p>Experience the convenience of ordering delicious meals at your fingertips with MealOver. Download the app now!</p>
+        ''',
+        coverImage: AppAssets.coverImageProject7,
+        images: [AppAssets.project7Image1, AppAssets.project7Image2, AppAssets.project7Image3, AppAssets.project7Image4, AppAssets.project7Image5, AppAssets.project7Image6, AppAssets.project7Image7, AppAssets.project7Image8, AppAssets.project7Image9, AppAssets.project7Image10, AppAssets.project7Image11, ],
+        isWeb: false,
+        url: "https://www.mediafire.com/file/fnqt7xu43w4itcn/mealover.apk/file"
+    ),
+    Project(
+        title: "English Stories",
+        shortDescription: "Offers a rich collection of English stories for children, ranging from fairy tales to folktales. With dark and light mode options, bookmarking, text-to-speech, zoom functionality, and easy sharing, StoryTale provides an immersive and enjoyable reading experience for kids of all ages.",
+        longDescription: '''
+        <h2>Introduction</h2>
+         <p>StoryTale is an engaging mobile application offering a wide collection of English stories for children of all ages. Dive into captivating narratives and let your imagination soar!</p>
+        <h2>Key Features:</h2>
+        <ul>
+            <li>Rich Story Collection:
+                <ul>
+                    <li>Explore a diverse range of stories curated for children, including fairy tales, folktales, fables, and more.</li>
+                </ul>
+            </li>
+            <li>Dark and Light Mode:
+                <ul>
+                    <li>Switch between dark and light themes to suit your reading preferences and enhance readability.</li>
+                </ul>
+            </li>
+            <li>Bookmarking:
+                <ul>
+                    <li>Bookmark your favorite stories for quick access and revisit them anytime.</li>
+                </ul>
+            </li>
+            <li>Text-to-Speech:
+                <ul>
+                    <li>Listen to stories with the built-in text-to-speech feature, providing an immersive reading experience.</li>
+                </ul>
+            </li>
+            <li>Zoom Functionality:
+                <ul>
+                    <li>Zoom in to view text and illustrations with ease, catering to users of all age groups.</li>
+                </ul>
+            </li>
+            <li>Share Stories:
+                <ul>
+                    <li>Share your favorite stories with friends and family through various social media and messaging platforms.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Experience the magic of storytelling with StoryTale. Download the app now and embark on unforgettable adventures!</p>
+        ''',
+        coverImage: AppAssets.coverImageProject9,
+        images: [AppAssets.project9Image1, AppAssets.project9Image2, AppAssets.project9Image3, AppAssets.project9Image4, ],
+        isWeb: false,
+        url: "https://play.google.com/store/apps/details?id=com.streamlogic.english.stories"
+    ),
+
+    Project(
+        title: "Academy Manager",
+        shortDescription: "I developed an academy management app using Flutter and Firebase. Admin features include course, batch, and student management, fee tracking, task assignments, and notifications. Students can manage profiles, track course progress and fees, view tasks, and receive updates. The app uses email authentication, push notifications, and MVVM architecture with provider.",
+        longDescription: '''
+        <h2>Introduction</h2>
+        <p>This app is built for academies offering digital courses like digital marketing and mobile app development. It facilitates both administrative and student activities.</p>
+        
+        <h2>Admin Side Features:</h2>
+        <ul>
+            <li>Manage courses, batches, and student admissions with detailed course information, duration, and fee.</li>
+            <li>Query section to save visitor queries with contact details.</li>
+            <li>Fee manager to manage monthly fee records and track pending fees.</li>
+            <li>Task assignment for students and progress tracking with a detailed course outline.</li>
+            <li>Feed manager to post updates visible in the student app.</li>
+            <li>Success story management to highlight student achievements.</li>
+            <li>Send important notifications directly to students.</li>
+            <li>Expense management for the institution's financial tracking.</li>
+        </ul>
+
+        <h2>Student Side Features:</h2>
+        <ul>
+            <li>View and edit profile information and change password.</li>
+            <li>Track course progress, view fee records, and see assigned tasks.</li>
+            <li>Module-wise progress tracking for detailed performance monitoring.</li>
+            <li>Access feed updates and notifications from the admin.</li>
+            <li>Browse available courses and view success stories.</li>
+            <li>Locate the academy office using provided location details.</li>
+        </ul>
+
+        <h2>Technical Details:</h2>
+        <ul>
+            <li>Built with Flutter for a seamless cross-platform experience.</li>
+            <li>Firebase as backend for robust and scalable data management.</li>
+            <li>Email authentication and push notifications for secure and effective communication.</li>
+            <li>Provider with MVVM architecture for efficient state management and clean code structure.</li>
+        </ul>
+        
+        ''',
+        coverImage: AppAssets.coverImageProject13,
+        images: [AppAssets.project13Image1, AppAssets.project13Image2, AppAssets.project13Image3, AppAssets.project13Image4, AppAssets.project13Image5, AppAssets.project13Image6, AppAssets.project13Image7, AppAssets.project13Image8, AppAssets.project13Image9, AppAssets.project13Image10, AppAssets.project13Image11],
+        isWeb: false,
+        url: "https://www.mediafire.com/file/idg2g7zt1ksafwe/academy+manager.apk/file"
+    ),
+    Project(
+        title: "Service Booking Website",
+        shortDescription: "The Service Booking Website, developed with Flutter for web, facilitates seamless online service appointments. Employing Provider for MVVM architecture and Firebase backend ensures reliability and scalability.",
+        longDescription: '''
+        <h2>Introduction:</h2>
+        <p>The Service Booking Website is a user-friendly platform designed for seamless booking of various services. Built using Flutter for web, the website follows the MVVM architecture pattern with Provider for state management, ensuring robustness and scalability. Firebase is integrated as the backend, providing a secure and reliable data storage and authentication solution.</p>
+        
+        <h2>Key Features:</h2>
+        <ul>
+          <li><strong>Service Booking:</strong> Users can easily browse available services and book appointments online with just a few clicks, enhancing convenience and accessibility.</li>
+          
+          <li><strong>MVVM Architecture:</strong> The website is structured using the Model-View-ViewModel (MVVM) architectural pattern, promoting code organization, maintainability, and separation of concerns.</li>
+          
+          <li><strong>Provider State Management:</strong> Provider is utilized for state management, offering a simple and efficient way to manage and propagate application state throughout the website.</li>
+          
+          <li><strong>Firebase Integration:</strong> Firebase serves as the backend for the website, handling data storage, real-time updates, and user authentication, ensuring data security and reliability.</li>
+          
+          <li><strong>User-Friendly Interface:</strong> The website features an intuitive and responsive design, providing users with a seamless and enjoyable booking experience across devices.</li>
+        </ul>
+        
+        <h2>Technologies Used:</h2>
+        <ul>
+          <li>Flutter for Web (front-end)</li>
+          <li>Provider (for state management)</li>
+          <li>Firebase (for backend services)</li>
+        </ul>
+        
+        <h2>Conclusion:</h2>
+        <p>The Service Booking Website offers a modern and efficient solution for users to book services online. With its user-friendly interface, robust architecture, and seamless Firebase integration, the website provides a reliable and convenient platform for service providers and customers alike.</p>
+
+        ''',
+        coverImage: AppAssets.project4Image1,
+        images: [AppAssets.project4Image1, AppAssets.project4Image2, AppAssets.project4Image3, AppAssets.project4Image4, AppAssets.project4Image5, AppAssets.project4Image6, AppAssets.project4Image7, AppAssets.project4Image8,],
+        url: "https://the-one-facilities.vercel.app/#/Home",
+        isWeb: true
+    ),
+  ];
+
+  final List<Experience> experiences = [
+    Experience(
+        jobTitle: 'Desktop Application Developer',
+        start: DateTime(2019,12,01),
+        end: DateTime(2020,18,01),
+        details: [
+          'Orchestrated the development of robust C# desktop applications, specializing in Point of Sale systems and innovative food delivery management solutions for restaurants ensuring seamless operations and enhanced efficiency.',
+          'Leveraged expertise as a C# desktop application developer to deliver tailored software solutions, optimizing restaurant management workflows and offering feature-rich Point of Sale systems that meet the specific needs of clients.',
+        ],
+        company: 'Professional Tech',
+        location: 'Okara, Pakistan'
+    ),
+    Experience(
+        jobTitle: 'Mobile Application Trainer',
+        start: DateTime(2020,09,01),
+        end: DateTime(2021,05,01),
+        details: [
+          'Spearheaded mobile app training initiatives for a government project, imparting essential skills in Flutter development, contributing to the capacity-building goals of the program.',
+          'Played a pivotal role in equipping participants with the latest mobile app development techniques, ensuring alignment with industry standards and fostering a skilled workforce as part of a strategic government initiative.'
+        ],
+        company: 'Kamyab Jawan Program',
+        location: 'Okara, Pakistan'
+    ),
+    Experience(
+        jobTitle: 'Flutter Developer',
+        start: DateTime(2021,05,01),
+        end: DateTime(2022,05,01),
+        details: [
+          'Executed diverse freelance projects encompassing Flutter mobile app development, delivering bespoke solutions aligned with client objectives.',
+          'Designed and implemented user-friendly solutions for business management, creating intuitive applications for both mobile and desktop platforms.'
+        ],
+        company: 'eFAIDA Technologies',
+        location: 'Okara, Pakistan'
+    ),
+    Experience(
+        jobTitle: 'Flutter Developer',
+        start: DateTime(2022,06,01),
+        end: DateTime(2023,06,01),
+        details: [
+          'Engineered a top-tier food delivery app, harmonizing Flutter front-end with a resilient Node.js back-end for seamless order processing and an enriched user inter-face.',
+          'Spearheaded a cutting-edge job finder app, capitalizing on Firebase back-end for real-time data sync, personalized job recommendations.',
+          'Indicatively crafted a walking challenge app, amplifying user motivation in a distinctive fitness context.'
+        ],
+        company: 'Software Hub',
+        location: 'Karachi, Pakistan (Remote)'
+    ),
+    Experience(
+        jobTitle: 'Flutter Developer - Part-Time',
+        start: DateTime(2023,05,01),
+        end: DateTime(2023,12,01),
+        details: [
+          'End-to-end app development using Firebase, REST APIs, and integration of real-time chat features.',
+          'Utilizes Twilio API for audio and video calling functionalities.',
+        ],
+        company: 'XSquare Technology',
+        location: 'Gujrat, India (Remote)'
+    ),
+    Experience(
+        jobTitle: 'Senior Flutter Developer',
+        start: DateTime(2023,06,01),
+        end: DateTime.now(),
+        details: [
+          'Developed advanced mobile apps, optimizing operations and user experience in cleaning and maintenance services.',
+          'Designed and implemented user-friendly solutions for business management, creating intuitive applications for both mobile and web platforms.',
+          'Led the development of an HR portal with diverse modules, streamlining and optimizing human resource processes for comprehensive organizational support.',
+          'Acted as both Flutter developer and back-end specialist, crafting robust Node.js APIs and utilizing MySQL for efficient data management.',
+        ],
+        company: 'The One Properties',
+        location: 'Ras Al Khaimah, UAE (Remote)'
+    ),
   ];
 
   final String aboutPara = "With over 3 years of experience in software development, specializing in Flutter, Node.js, and Python, I am dedicated to crafting innovative solutions that empower businesses and enhance user experiences. My passion lies in leveraging cutting-edge technologies to create seamless mobile applications that meet the unique needs of clients across various industries. I thrive in collaborative environments where I can contribute my expertise in full-stack development to drive projects from conception to execution. Committed to staying at the forefront of emerging technologies, I continuously seek opportunities to expand my skills and knowledge, ensuring that my solutions are always at the forefront of industry standards. As a detail-oriented professional, I approach each project with precision and creativity, striving to exceed expectations and deliver exceptional results. With a proven track record of delivering high-quality software solutions, I am poised to tackle the challenges of tomorrow's digital landscape with confidence and enthusiasm. Let's connect and explore how I can help bring your vision to life.";
 
   //getters
   int get selectedSection => _selectedSection;
+  bool get showAllProjects => _showAllProjects;
 
 
   //setters
   set selectedSection(int val){
     _selectedSection = val;
     _scrollToWidget(val);
+    update();
+  }
+
+  set showAllProjects(bool val){
+    _showAllProjects = val;
     update();
   }
 
@@ -605,6 +802,9 @@ class MainController extends GetxController{
     else if(index == 4){
       position = 650;
     }
+    else if(index == 5){
+      position = 700;
+    }
     if(Get.width <= mobileWidth){
       position += 650;
     }
@@ -621,5 +821,12 @@ class MainController extends GetxController{
 
   downloadCV()async{
     await launchUrl(Uri.parse("https://drive.google.com/file/d/1Xx61KQTcrByxeQE3X8JGtyeiIoMqqLrJ/view?usp=sharing"), mode: LaunchMode.externalApplication);
+  }
+
+  @override
+  void onInit() {
+    super.onInit();
+    experiences.sort((a,b) => b.start.compareTo(a.start));
+    update();
   }
 }

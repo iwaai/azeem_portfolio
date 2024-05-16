@@ -23,6 +23,18 @@ class ProjectsSection extends StatelessWidget {
     return GetBuilder<MainController>(
         autoRemove: false,
         builder: (controller){
+          int length = 0;
+          if(controller.projects.length <= 6){
+            length = controller.projects.length;
+          }
+          else if(controller.projects.length > 6 ){
+            if(controller.showAllProjects){
+              length = controller.projects.length;
+            }
+            else{
+              length = 6;
+            }
+          }
           return Column(
             children: [
               const Text("Projects", style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold, fontFamily: 'Poppins'),),
@@ -32,7 +44,8 @@ class ProjectsSection extends StatelessWidget {
 
               FB5Row(
                   classNames: 'col-12 px-${Get.width <= mobileWidth ? "2" : "8"} align-items-center justify-content-center',
-                  children: controller.projects.map((e) {
+                  children: List.generate(length, (index) {
+                    var e = controller.projects[index];
                     return FB5Col(
                       classNames: "col-12 col-md-6 col-lg-4 col-xl-3 m-3",
                       child: Container(
@@ -67,7 +80,8 @@ class ProjectsSection extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(e.title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),),
-                                  Text(e.shortDescription, style: const TextStyle(fontSize: 14), maxLines: 4, textAlign: TextAlign.justify, overflow: TextOverflow.ellipsis,),
+                                  Text(e.shortDescription, style: const TextStyle(fontSize: 14), maxLines: 3, textAlign: TextAlign.justify, overflow: TextOverflow.ellipsis,),
+
                                 ],
                               ),
                             ),
@@ -97,6 +111,16 @@ class ProjectsSection extends StatelessWidget {
                     );
                   }).toList()
               ),
+              const SizedBox(height: 10,),
+              controller.showAllProjects == false ?
+              Center(
+                child: ElevatedButton(
+                  onPressed: (){
+                    controller.showAllProjects = true;
+                  },
+                  child: const Text("Show More", style: TextStyle(fontWeight: FontWeight.bold),),
+                ),
+              ) : const SizedBox(),
               const SizedBox(height: 20,),
             ],
           );

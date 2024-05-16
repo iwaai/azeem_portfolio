@@ -53,7 +53,8 @@ class SkillsSection extends StatelessWidget {
                                     value: controller.skills[index].value / 10,
                                     minHeight: 30,
                                     borderRadius: BorderRadius.circular(30),
-                                    color: AppColors.primaryColor,
+                                    color: const Color(0xFFFFCF75),
+                                    // color: const Color(0xFFFFCF75),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.symmetric(horizontal: 8.0),

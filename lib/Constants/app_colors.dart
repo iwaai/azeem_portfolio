@@ -135,6 +135,10 @@ class AppColors
         radioTheme: const RadioThemeData(
             fillColor: MaterialStatePropertyAll(Colors.white)
         ),
+        chipTheme: ChipThemeData(
+          color: MaterialStatePropertyAll(primaryColor),
+          labelStyle: const TextStyle(color: Colors.black)
+        ),
         cardTheme: CardTheme(
           color: Colors.grey.withOpacity(0.3),
           surfaceTintColor: Colors.grey.withOpacity(0.3),
