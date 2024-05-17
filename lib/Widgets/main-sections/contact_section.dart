@@ -40,7 +40,7 @@ class ContactSection extends StatelessWidget {
                     children: [
                       const Text("Contact Me", style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold, fontFamily: 'Poppins'),),
                       // SizedBox(height: 20,),
-                      const Text("I am available for project based, full-time, part-time for remote positions.", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                      const Text("I am available for project based, full-time, part-time remote positions.", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
                       const SizedBox(height: 10,),
                       FB5Row(
                           classNames: 'col-12',

@@ -89,7 +89,9 @@ class HomeSection extends StatelessWidget {
                                     await launchUrl(Uri.parse(e.url), mode: LaunchMode.externalApplication);
                                   }
                                 },
-                                child: SvgPicture.asset(e.icon, width: 35, height: 35, color: Theme.of(context).textTheme.bodyMedium?.color,),
+                                child: Tooltip(
+                                    message: e.tooltip,
+                                    child: SvgPicture.asset(e.icon, width: 35, height: 35, color: Theme.of(context).textTheme.bodyMedium?.color,)),
                               ),
                             );
                           }).toList()
