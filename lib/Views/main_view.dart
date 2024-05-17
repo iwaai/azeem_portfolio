@@ -1,12 +1,10 @@
-
-import 'package:abdulrehman/Constants/app_colors.dart';
-import 'package:abdulrehman/Constants/dimensions.dart';
-import 'package:abdulrehman/Controllers/main_controller.dart';
-import 'package:abdulrehman/Widgets/app_drawer.dart';
+import '/Constants/app_colors.dart';
+import '/Constants/dimensions.dart';
+import '/Controllers/main_controller.dart';
+import '/Widgets/app_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../Widgets/app_bar.dart';
-import '../Widgets/main-sections/home_section.dart';
 
 class MainView extends StatelessWidget {
   const MainView({super.key});
@@ -14,7 +12,6 @@ class MainView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    print(size.width);
     return Scaffold(
       appBar: AppBar(
         title: const MyAppBar(),

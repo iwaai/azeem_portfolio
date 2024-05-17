@@ -1,7 +1,9 @@
 import 'package:abdulrehman/Constants/dimensions.dart';
+import 'package:abdulrehman/Widgets/main-sections/education_section.dart';
 import 'package:abdulrehman/Widgets/main-sections/experience_section.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../Models/education.dart';
 import '../Models/experience.dart';
 import '../Models/project.dart';
 import '../Models/service.dart';
@@ -61,6 +63,7 @@ class MainController extends GetxController{
     ServicesSection(),
     ProjectsSection(),
     ExperienceSection(),
+    EducationSection(),
   ];
   
   final List<Skill> skills = [
@@ -751,17 +754,50 @@ class MainController extends GetxController{
         start: DateTime(2023,06,01),
         end: DateTime.now(),
         details: [
-          'Developed advanced mobile apps, optimizing operations and user experience in cleaning and maintenance services.',
-          'Designed and implemented user-friendly solutions for business management, creating intuitive applications for both mobile and web platforms.',
-          'Led the development of an HR portal with diverse modules, streamlining and optimizing human resource processes for comprehensive organizational support.',
-          'Acted as both Flutter developer and back-end specialist, crafting robust Node.js APIs and utilizing MySQL for efficient data management.',
+          'Developed advanced mobile and web apps, optimizing operations and user experience in cleaning and maintenance services.',
+          'Designed user-friendly solutions for business management, resulting in a 20% increase in user engagement.',
+          'Led the development of an HR portal, streamlining processes and improving efficiency by 25%.',
+          'Acted as both Flutter developer and back-end specialist, enhancing API performance by 15%.',
         ],
         company: 'The One Properties',
         location: 'Ras Al Khaimah, UAE (Remote)'
     ),
   ];
+  
+  final List<Education> educations = [
+    Education(
+        degree: "Bachelor of Science Computer Science (BSCS)",
+        university: "Bahauddin Zakariya University - BZU",
+        location: "Multan, Pakistan",
+        details: [
+          'Focus on Software development and programming concepts',
+          'Developed a sophisticated Point of Sale system as a capstone project'
+        ],
+        start: DateTime(2015, 09,01),
+        end: DateTime(2019, 09, 01)
+    ),
+    Education(
+        degree: "Master of Science Computer Science (MSCS)",
+        university: "University of Okara",
+        location: "Okara, Pakistan",
+        details: [
+          'Focus on Machine Learning and Deep Learning',
+          'Write thesis on Multimodal approach to detect deep fake videos'
+        ],
+        start: DateTime(2021, 09,01),
+        end: DateTime(2024, 02, 01)
+    ),
+  ];
 
-  final String aboutPara = "With over 3 years of experience in software development, specializing in Flutter, Node.js, and Python, I am dedicated to crafting innovative solutions that empower businesses and enhance user experiences. My passion lies in leveraging cutting-edge technologies to create seamless mobile applications that meet the unique needs of clients across various industries. I thrive in collaborative environments where I can contribute my expertise in full-stack development to drive projects from conception to execution. Committed to staying at the forefront of emerging technologies, I continuously seek opportunities to expand my skills and knowledge, ensuring that my solutions are always at the forefront of industry standards. As a detail-oriented professional, I approach each project with precision and creativity, striving to exceed expectations and deliver exceptional results. With a proven track record of delivering high-quality software solutions, I am poised to tackle the challenges of tomorrow's digital landscape with confidence and enthusiasm. Let's connect and explore how I can help bring your vision to life.";
+  final String aboutPara = '''Dynamic and results-driven Flutter Developer with over 3 years of extensive experience in designing and implementing high-performance mobile applications. Adept at transforming intricate designs and visionary concepts into visually stunning, user-centric applications. Passionate about delivering exceptional user experiences, I excel in both front-end and back-end development, leveraging a robust foundation in Dart, Flutter, and Node.js.
+
+  Throughout my career, I have successfully led and contributed to diverse projects, ranging from advanced mobile solutions for business management to innovative fitness and job-finding applications. My expertise extends to utilizing Firebase and real-time data synchronization, ensuring seamless app functionality and enhanced user engagement.
+
+  With a proven track record of optimizing app performance, streamlining processes, and driving project success, I bring a strategic and innovative approach to problem-solving. My commitment to continuous learning and staying abreast of the latest industry trends empowers me to deliver cutting-edge solutions that meet and exceed client expectations.
+
+  I thrive in collaborative environments, consistently demonstrating strong communication skills and a team-oriented mindset. As a proactive and adaptable professional, I am dedicated to contributing top-tier development skills to forward-thinking projects and organizations, ensuring impactful results and sustainable growth.
+  '''
+  ;
 
   //getters
   int get selectedSection => _selectedSection;
@@ -805,6 +841,9 @@ class MainController extends GetxController{
     else if(index == 5){
       position = 700;
     }
+    else if(index == 6){
+      position = 880;
+    }
     if(Get.width <= mobileWidth){
       position += 650;
     }
@@ -827,6 +866,7 @@ class MainController extends GetxController{
   void onInit() {
     super.onInit();
     experiences.sort((a,b) => b.start.compareTo(a.start));
+    educations.sort((a,b) => b.end.compareTo(a.end));
     update();
   }
 }

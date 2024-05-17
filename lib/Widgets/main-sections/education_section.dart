@@ -7,13 +7,12 @@ import 'package:flutter_bootstrap5/flutter_bootstrap5.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:timelines_plus/timelines_plus.dart';
-
 import '../../Constants/app_assets.dart';
 import '../../Constants/dimensions.dart';
-import '../../Models/experience.dart';
+import '../../Models/education.dart';
 
-class ExperienceSection extends StatelessWidget {
-  const ExperienceSection({super.key});
+class EducationSection extends StatelessWidget {
+  const EducationSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +31,7 @@ class ExperienceSection extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(4),
                           image: const DecorationImage(
-                              image: AssetImage(AppAssets.experienceImage),
+                              image: AssetImage(AppAssets.educationImage),
                               alignment: Alignment.bottomCenter
                           )
                       ),
@@ -43,11 +42,11 @@ class ExperienceSection extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text("Experience", style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold, fontFamily: 'Poppins'),),
+                        const Text("Education", style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold, fontFamily: 'Poppins'),),
                         // SizedBox(height: 20,),
-                        const Text("Here is my job timeline ", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                        const Text("Here is my education details ", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
                        const SizedBox(height: 10,),
-                        ExperienceTimeline(experiences: controller.experiences,),
+                        EducationTimeline(educations: controller.educations,),
                         const SizedBox(height: 5,),
 
                       ],
@@ -60,9 +59,9 @@ class ExperienceSection extends StatelessWidget {
   }
 }
 
-class ExperienceTimeline extends StatelessWidget {
-  final List<Experience> experiences;
-  const ExperienceTimeline({super.key, required this.experiences});
+class EducationTimeline extends StatelessWidget {
+  final List<Education> educations;
+  const EducationTimeline({super.key, required this.educations});
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +81,7 @@ class ExperienceTimeline extends StatelessWidget {
       builder: TimelineTileBuilder.connected(
         connectionDirection: ConnectionDirection.before,
         contentsAlign: ContentsAlign.basic,
-        itemCount: experiences.length,
+        itemCount: educations.length,
         indicatorBuilder: (_, index) {
           return  DotIndicator(
             color: Theme.of(context).primaryColor,
@@ -101,7 +100,7 @@ class ExperienceTimeline extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                    Text(experiences[index].jobTitle, style: const TextStyle(fontSize: 21, fontWeight: FontWeight.bold),),
+                    Text(educations[index].degree, style: const TextStyle(fontSize: 21, fontWeight: FontWeight.bold),),
                   const SizedBox(
                     width: 380,
                     child: Divider(),
@@ -113,7 +112,7 @@ class ExperienceTimeline extends StatelessWidget {
                           children: [
                             const Icon(Icons.calendar_month),
                             const SizedBox(width: 5,),
-                            Text(DateFormat("MMMM-yyyy").format(experiences[index].start), style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),),
+                            Text(DateFormat("MMMM-yyyy").format(educations[index].start), style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),),
                           ],
                         ),
                         const SizedBox(width: 8,),
@@ -124,7 +123,7 @@ class ExperienceTimeline extends StatelessWidget {
                           children: [
                             const Icon(Icons.calendar_month),
                             const SizedBox(width: 5,),
-                            Text(DateFormat("MMMM-yyyy").format(experiences[index].end), style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),),
+                            Text(DateFormat("MMMM-yyyy").format(educations[index].end), style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),),
                           ],
                         ),
                       ],
@@ -140,7 +139,7 @@ class ExperienceTimeline extends StatelessWidget {
                           children: [
                             const Icon(Icons.location_city),
                             const SizedBox(width: 5,),
-                            Flexible(child: Text(experiences[index].company, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis,)),
+                            Flexible(child: Text(educations[index].university, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis,)),
                           ],
                         ),
                         const SizedBox(width: 8,),
@@ -151,7 +150,7 @@ class ExperienceTimeline extends StatelessWidget {
                           children: [
                             const Icon(Icons.location_pin),
                             const SizedBox(width: 5,),
-                            Flexible(child: Text(experiences[index].location, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis,)),
+                            Flexible(child: Text(educations[index].location, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis,)),
                           ],
                         ),
                       ],
@@ -160,9 +159,9 @@ class ExperienceTimeline extends StatelessWidget {
                     width: 380,
                     child: Divider(),
                   ),
-                     const Chip(label: Text("Responsibilities", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),)),
+                     const Chip(label: Text("Learning Areas", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),)),
                     const SizedBox(height: 8,),
-                    for(int i =0; i < experiences[index].details.length; i++)
+                    for(int i =0; i < educations[index].details.length; i++)
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -175,7 +174,7 @@ class ExperienceTimeline extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(width: 5,),
-                          Expanded(child: Text(experiences[index].details[i], style: const TextStyle(fontWeight: FontWeight.bold),)),
+                          Expanded(child: Text(educations[index].details[i], style: const TextStyle(fontWeight: FontWeight.bold),)),
                         ],
                       )
                   ],

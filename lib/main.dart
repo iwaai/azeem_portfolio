@@ -1,13 +1,12 @@
 import '/Controllers/main_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bootstrap5/flutter_bootstrap5.dart';
 import 'package:get/get.dart';
-
 import 'Constants/app_colors.dart';
 import 'Controllers/theme_controller.dart';
 import 'Routes/app_pages.dart';
 import 'Routes/app_routes.dart';
+
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();

@@ -30,6 +30,7 @@ class AppAssets
   static const String deploymentIcon = "assets/images/deploymentIcon.svg";
   static const String webIcon = "assets/images/webIcon.svg";
   static const String experienceImage = "assets/images/experience.png";
+  static const String educationImage = "assets/images/educationImage.png";
 
   //projects images
   static const String coverImageProject1 = "assets/project_images/coverImageProject1.png";

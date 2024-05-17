@@ -79,8 +79,8 @@ class ProjectsSection extends StatelessWidget {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(e.title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),),
-                                  Text(e.shortDescription, style: const TextStyle(fontSize: 14), maxLines: 3, textAlign: TextAlign.justify, overflow: TextOverflow.ellipsis,),
+                                  Text(e.title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18), overflow: TextOverflow.ellipsis,),
+                                  Text(e.shortDescription, style: const TextStyle(fontSize: 14), maxLines: 4, textAlign: TextAlign.justify, overflow: TextOverflow.ellipsis,),
 
                                 ],
                               ),

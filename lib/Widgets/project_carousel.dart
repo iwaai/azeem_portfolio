@@ -1,4 +1,5 @@
 
+import 'package:abdulrehman/Constants/dimensions.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -63,7 +64,7 @@ class _ProjectCarouselState extends State<ProjectCarousel> {
   Widget _carousel({required double width , required double height}){
     double viewportFraction = 1.0;
     if(widget.isWeb == false){
-      if(Get.width > 500){
+      if(Get.width > mobileWidth){
         viewportFraction = 0.22;
       }
     }
@@ -81,7 +82,7 @@ class _ProjectCarouselState extends State<ProjectCarousel> {
                 carouselController: buttonCarouselController,
                 itemBuilder: (BuildContext context, int itemIndex, int pageViewIndex) =>
                     Container(
-                     width: widget.isWeb ? width : 250,
+                     width: widget.isWeb ? width : Get.width <= mobileWidth ? 300 : 250,
                       height: height,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
