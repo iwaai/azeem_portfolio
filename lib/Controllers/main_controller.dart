@@ -1,8 +1,10 @@
 import 'package:abdulrehman/Constants/dimensions.dart';
+import 'package:abdulrehman/Widgets/main-sections/contact_section.dart';
 import 'package:abdulrehman/Widgets/main-sections/education_section.dart';
 import 'package:abdulrehman/Widgets/main-sections/experience_section.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../Models/contact.dart';
 import '../Models/education.dart';
 import '../Models/experience.dart';
 import '../Models/project.dart';
@@ -27,6 +29,10 @@ class MainController extends GetxController{
   int _selectedSection = 0;
   final String myName = "Abdul Rehman";
   final List<SocialLink> socialLinks = [
+    SocialLink(icon: AppAssets.emailIcon, url: "mailto:mr.abdulrehman.ar@gmail.com", tooltip: "Email"),
+    SocialLink(icon: AppAssets.phoneIcon, url: "tel:+923089098067", tooltip: "Phone"),
+    SocialLink(icon: AppAssets.whatsappIcon, url: "https://wa.me/+923089098067", tooltip: "WhatsApp"),
+    SocialLink(icon: AppAssets.skypeIcon, url: "https://join.skype.com/invite/CbugWd7babKR", tooltip: "Skype"),
     SocialLink(icon: AppAssets.linkedinIcon, url: "https://www.linkedin.com/in/mr-abdulrehman/", tooltip: "LinkedIn"),
     SocialLink(icon: AppAssets.githubIcon, url: "https://github.com/abdulrehman192/", tooltip: "Github"),
     SocialLink(icon: AppAssets.stackoverflowIcon, url: "https://stackoverflow.com/users/15030096/abdul-rehman", tooltip: "Stack Over Flow"),
@@ -64,6 +70,7 @@ class MainController extends GetxController{
     ProjectsSection(),
     ExperienceSection(),
     EducationSection(),
+    ContactSection(),
   ];
   
   final List<Skill> skills = [
@@ -86,8 +93,7 @@ class MainController extends GetxController{
     Skill(title: "Flutter Web", value: 9.0),
     Skill(title: "Flutter Windows", value: 7.0),
   ];
-
-
+  
   final List<Service> services = [
     //add max 8 items for description
     Service(icon: AppAssets.mobileAppDevelopmentIcon, title: "Mobile App Development", description: ['Flutter app development', 'Clean code with smooth states', 'Firebase integration', 'API integration', 'Responsive design', 'Deploy on store', 'app migration and cloning', 'maintenance and support'], startingFrom: "250"),
@@ -788,6 +794,13 @@ class MainController extends GetxController{
         end: DateTime(2024, 02, 01)
     ),
   ];
+  
+  final List<Contact> contacts = [
+    Contact(icon: AppAssets.locationIcon, title: "Address", value: "Okara, Pakistan"),
+    Contact(icon: AppAssets.phoneIcon, title: "Phone", value: "+923089098067"),
+    Contact(icon: AppAssets.emailIcon, title: "Email", value: "mr.abdulrehman.ar@gmail.com"),
+    Contact(icon: AppAssets.whatsappIcon, title: "Whatsapp", value: "+923089098067"),
+  ];
 
   final String aboutPara = '''Dynamic and results-driven Flutter Developer with over 3 years of extensive experience in designing and implementing high-performance mobile applications. Adept at transforming intricate designs and visionary concepts into visually stunning, user-centric applications. Passionate about delivering exceptional user experiences, I excel in both front-end and back-end development, leveraging a robust foundation in Dart, Flutter, and Node.js.
 
@@ -843,6 +856,9 @@ class MainController extends GetxController{
     }
     else if(index == 6){
       position = 880;
+    }
+    else if(index == 7){
+      position = 930;
     }
     if(Get.width <= mobileWidth){
       position += 650;

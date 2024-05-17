@@ -76,29 +76,23 @@ class HomeSection extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 20,),
-                      SizedBox(
-                        height: 50,
-                        child: Row(
-                          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      FB5Row(
+
                           children: controller.socialLinks.map((e) {
-                            return Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                InkWell(
-                                  hoverColor: Colors.transparent,
-                                  borderRadius: BorderRadius.circular(50),
-                                  onTap: ()async{
-                                     if(e.url.isNotEmpty){
-                                       await launchUrl(Uri.parse(e.url), mode: LaunchMode.externalApplication);
-                                     }
-                                  },
-                                  child: SvgPicture.asset(e.icon, width: 35, height: 35, color: Theme.of(context).textTheme.bodyMedium?.color,),
-                                ),
-                                const SizedBox(width: 12,),
-                              ],
+                            return FB5Col(
+                              classNames: 'p-2',
+                              child: InkWell(
+                                hoverColor: Colors.transparent,
+                                borderRadius: BorderRadius.circular(50),
+                                onTap: ()async{
+                                  if(e.url.isNotEmpty){
+                                    await launchUrl(Uri.parse(e.url), mode: LaunchMode.externalApplication);
+                                  }
+                                },
+                                child: SvgPicture.asset(e.icon, width: 35, height: 35, color: Theme.of(context).textTheme.bodyMedium?.color,),
+                              ),
                             );
-                          }).toList(),
-                        ),
+                          }).toList()
                       ),
                       const SizedBox(height: 20,),
                       ElevatedButton.icon(

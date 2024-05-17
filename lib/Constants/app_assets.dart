@@ -29,8 +29,14 @@ class AppAssets
   static const String apiIcon = "assets/images/apiIcon.svg";
   static const String deploymentIcon = "assets/images/deploymentIcon.svg";
   static const String webIcon = "assets/images/webIcon.svg";
+  static const String phoneIcon = "assets/images/phoneIcon.svg";
+  static const String whatsappIcon = "assets/images/whatsappIcon.svg";
+  static const String skypeIcon = "assets/images/skypeIcon.svg";
+  static const String emailIcon = "assets/images/emailIcon.svg";
+  static const String locationIcon = "assets/images/locationIcon.svg";
   static const String experienceImage = "assets/images/experience.png";
   static const String educationImage = "assets/images/educationImage.png";
+  static const String contactImage = "assets/images/contactImage.png";
 
   //projects images
   static const String coverImageProject1 = "assets/project_images/coverImageProject1.png";

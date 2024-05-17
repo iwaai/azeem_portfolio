@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bootstrap5/flutter_bootstrap5.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:timelines_plus/timelines_plus.dart';
@@ -85,11 +86,10 @@ class EducationTimeline extends StatelessWidget {
         indicatorBuilder: (_, index) {
           return  DotIndicator(
             color: Theme.of(context).primaryColor,
-            child: Icon(
-              Icons.home_repair_service,
-              color: AppColors.secondaryColor,
-              size: 25.0,
-            ),
+            child: Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: SvgPicture.asset(AppAssets.educationIcon, color: AppColors.secondaryColor, width: 15, height: 15,),
+            )
           );
         },
         contentsBuilder: (context, index){
