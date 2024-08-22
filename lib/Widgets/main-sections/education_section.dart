@@ -19,44 +19,54 @@ class EducationSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<MainController>(
         autoRemove: false,
-        builder: (controller){
+        builder: (controller) {
           return FB5Row(
-              classNames: 'col-12 px-${Get.width <= mobileWidth ? "2" : "8"} align-items-center justify-content-center',
+              classNames:
+                  'col-12 px-${Get.width <= mobileWidth ? "2" : "8"} align-items-center justify-content-center',
               children: [
                 FB5Col(
                     classNames: 'col-12 col-lg-4 col-xl-4 p-4',
-                    child:
-                    Container(
+                    child: Container(
                       height: 350,
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(4),
                           image: const DecorationImage(
                               image: AssetImage(AppAssets.educationImage),
-                              alignment: Alignment.bottomCenter
-                          )
-                      ),
-                    )
-                ),
+                              alignment: Alignment.bottomCenter)),
+                    )),
                 FB5Col(
-                    classNames: 'col-12 col-lg-7 col-xl-7 p-${Get.width <= mobileWidth ? "4" : "6"}',
+                    classNames:
+                        'col-12 col-lg-7 col-xl-7 p-${Get.width <= mobileWidth ? "4" : "6"}',
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text("Education", style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold, fontFamily: 'Poppins'),),
+                        const Text(
+                          "Education",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'Poppins'),
+                        ),
                         // SizedBox(height: 20,),
-                        const Text("Here is my education details ", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
-                       const SizedBox(height: 10,),
-                        EducationTimeline(educations: controller.educations,),
-                        const SizedBox(height: 5,),
-
+                        const Text(
+                          "Here is my education details ",
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        EducationTimeline(
+                          educations: controller.educations,
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
                       ],
-                    )
-                ),
-              ]
-          );
-        }
-    );
+                    )),
+              ]);
+        });
   }
 }
 
@@ -66,7 +76,6 @@ class EducationTimeline extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return FixedTimeline.tileBuilder(
       theme: TimelineThemeData(
         nodePosition: 0,
@@ -84,100 +93,159 @@ class EducationTimeline extends StatelessWidget {
         contentsAlign: ContentsAlign.basic,
         itemCount: educations.length,
         indicatorBuilder: (_, index) {
-          return  DotIndicator(
-            color: Theme.of(context).primaryColor,
-            child: Padding(
-              padding: const EdgeInsets.all(5.0),
-              child: SvgPicture.asset(AppAssets.educationIcon, color: AppColors.secondaryColor, width: 15, height: 15,),
-            )
-          );
+          return DotIndicator(
+              color: Theme.of(context).primaryColor,
+              child: Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: SvgPicture.asset(
+                  AppAssets.educationIcon,
+                  color: AppColors.secondaryColor,
+                  width: 15,
+                  height: 15,
+                ),
+              ));
         },
-        contentsBuilder: (context, index){
+        contentsBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.only(bottom: 30),
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 2.0, horizontal: 15),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 2.0, horizontal: 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                    Text(educations[index].degree, style: const TextStyle(fontSize: 21, fontWeight: FontWeight.bold),),
+                  Text(
+                    educations[index].degree,
+                    style: const TextStyle(
+                        fontSize: 21, fontWeight: FontWeight.bold),
+                  ),
                   const SizedBox(
                     width: 380,
                     child: Divider(),
                   ),
                   Wrap(
-                      children: [
-                        Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const Icon(Icons.calendar_month),
-                            const SizedBox(width: 5,),
-                            Text(DateFormat("MMMM-yyyy").format(educations[index].start), style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),),
-                          ],
-                        ),
-                        const SizedBox(width: 8,),
-                        const Text(" - "),
-                        const SizedBox(width: 8,),
-                        Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const Icon(Icons.calendar_month),
-                            const SizedBox(width: 5,),
-                            Text(DateFormat("MMMM-yyyy").format(educations[index].end), style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),),
-                          ],
-                        ),
-                      ],
-                    ),
-                    const SizedBox(
-                      width: 380,
-                        child: Divider(),
-                    ),
-                    Wrap(
-                      children: [
-                        Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const Icon(Icons.location_city),
-                            const SizedBox(width: 5,),
-                            Flexible(child: Text(educations[index].university, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis,)),
-                          ],
-                        ),
-                        const SizedBox(width: 8,),
-                        const Text(" - "),
-                        const SizedBox(width: 8,),
-                        Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const Icon(Icons.location_pin),
-                            const SizedBox(width: 5,),
-                            Flexible(child: Text(educations[index].location, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis,)),
-                          ],
-                        ),
-                      ],
-                    ),
+                    children: [
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Icon(Icons.calendar_month),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            DateFormat("MMMM-yyyy")
+                                .format(educations[index].start),
+                            style: const TextStyle(
+                                fontSize: 17, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Text(" - "),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Icon(Icons.calendar_month),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            DateFormat("MMMM-yyyy")
+                                .format(educations[index].end),
+                            style: const TextStyle(
+                                fontSize: 17, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                   const SizedBox(
                     width: 380,
                     child: Divider(),
                   ),
-                     const Chip(label: Text("Learning Areas", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),)),
-                    const SizedBox(height: 8,),
-                    for(int i =0; i < educations[index].details.length; i++)
+                  Wrap(
+                    children: [
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 6.0),
-                            child: CircleAvatar(
-                              radius: 4,
-                              backgroundColor: Theme.of(context).primaryColorDark,
-                            ),
+                          const Icon(Icons.location_city),
+                          const SizedBox(
+                            width: 5,
                           ),
-                          const SizedBox(width: 5,),
-                          Expanded(child: Text(educations[index].details[i], style: const TextStyle(fontWeight: FontWeight.bold),)),
+                          Flexible(
+                              child: Text(
+                            educations[index].university,
+                            style: const TextStyle(
+                                fontSize: 17, fontWeight: FontWeight.bold),
+                            overflow: TextOverflow.ellipsis,
+                          )),
                         ],
-                      )
-                  ],
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Text(" - "),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Icon(Icons.location_pin),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          Flexible(
+                              child: Text(
+                            educations[index].location,
+                            style: const TextStyle(
+                                fontSize: 17, fontWeight: FontWeight.bold),
+                            overflow: TextOverflow.ellipsis,
+                          )),
+                        ],
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    width: 380,
+                    child: Divider(),
+                  ),
+                  const Chip(
+                      label: Text(
+                    "Learning Areas",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                  )),
+                  const SizedBox(
+                    height: 8,
+                  ),
+                  for (int i = 0; i < educations[index].details.length; i++)
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 6.0),
+                          child: CircleAvatar(
+                            radius: 4,
+                            backgroundColor: Theme.of(context).primaryColorDark,
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        Expanded(
+                            child: Text(
+                          educations[index].details[i],
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        )),
+                      ],
+                    )
+                ],
               ),
             ),
           );
@@ -185,9 +253,7 @@ class EducationTimeline extends StatelessWidget {
         connectorBuilder: (_, index, ___) => SolidLineConnector(
           color: Theme.of(context).primaryColor,
         ),
-
       ),
     );
   }
 }
-

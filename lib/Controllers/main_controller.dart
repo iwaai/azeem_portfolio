@@ -23,29 +23,54 @@ import 'package:get/get.dart';
 
 import '../Models/social_link.dart';
 
-class MainController extends GetxController{
-
+class MainController extends GetxController {
   ScrollController scrollController = ScrollController();
   int _selectedSection = 0;
-  final String myName = "Abdul Rehman";
+  final String myName = "Azeem khan";
   final List<SocialLink> socialLinks = [
-    SocialLink(icon: AppAssets.emailIcon, url: "mailto:mr.abdulrehman.ar@gmail.com", tooltip: "Email"),
-    SocialLink(icon: AppAssets.phoneIcon, url: "tel:+923089098067", tooltip: "Phone"),
-    SocialLink(icon: AppAssets.whatsappIcon, url: "https://wa.me/+923089098067", tooltip: "WhatsApp"),
-    SocialLink(icon: AppAssets.skypeIcon, url: "https://join.skype.com/invite/CbugWd7babKR", tooltip: "Skype"),
-    SocialLink(icon: AppAssets.linkedinIcon, url: "https://www.linkedin.com/in/mr-abdulrehman/", tooltip: "LinkedIn"),
-    SocialLink(icon: AppAssets.githubIcon, url: "https://github.com/abdulrehman192/", tooltip: "Github"),
-    SocialLink(icon: AppAssets.stackoverflowIcon, url: "https://stackoverflow.com/users/15030096/abdul-rehman", tooltip: "Stack Over Flow"),
-    SocialLink(icon: AppAssets.mediumIcon, url: "https://medium.com/@mr.abdulrehman.ar", tooltip: "Medium"),
-    SocialLink(icon: AppAssets.youtubeIcon, url: "https://www.youtube.com/@professionaltech1543", tooltip: "Youtube"),
-    SocialLink(icon: AppAssets.xIcon, url: "https://x.com/mr_AbdulRehman1", tooltip: "X / Twitter"),
+    SocialLink(
+        icon: AppAssets.emailIcon,
+        url: "mailto:ayzeetechloom@gmail.com",
+        tooltip: "Email"),
+    SocialLink(
+        icon: AppAssets.phoneIcon, url: "tel:+923704304141", tooltip: "Phone"),
+    SocialLink(
+        icon: AppAssets.whatsappIcon,
+        url: "https://wa.me/+92370430414",
+        tooltip: "WhatsApp"),
+    // SocialLink(
+    //     icon: AppAssets.skypeIcon,
+    //     url: "https://join.skype.com/invite/CbugWd7babKR",
+    //     tooltip: "Skype"),
+    SocialLink(
+        icon: AppAssets.linkedinIcon,
+        url: "https://www.linkedin.com/in/azeem-khan-85a854319/",
+        tooltip: "LinkedIn"),
+    SocialLink(
+        icon: AppAssets.githubIcon,
+        url: "https://github.com/AzeemKhan482",
+        tooltip: "Github"),
+    // SocialLink(
+    //     icon: AppAssets.stackoverflowIcon,
+    //     url: "https://stackoverflow.com/users/15030096/abdul-rehman",
+    //     tooltip: "Stack Over Flow"),
+    // SocialLink(
+    //     icon: AppAssets.mediumIcon,
+    //     url: "https://medium.com/@mr.abdulrehman.ar",
+    //     tooltip: "Medium"),
+    // SocialLink(
+    //     icon: AppAssets.youtubeIcon,
+    //     url: "https://www.youtube.com/@professionaltech1543",
+    //     tooltip: "Youtube"),
+    // SocialLink(
+    //     icon: AppAssets.xIcon,
+    //     url: "https://x.com/mr_AbdulRehman1",
+    //     tooltip: "X / Twitter"),
   ];
   final List<String> roles = [
-    'Flutter Developer',
+    'Full Stack Developer',
     'Node.js Api Developer',
     'Problem Solver',
-    'Quick Learner',
-    'Team Leader',
     'I can build android apps',
     'I can build iOS apps',
     'I can build web apps',
@@ -72,7 +97,7 @@ class MainController extends GetxController{
     EducationSection(),
     ContactSection(),
   ];
-  
+
   final List<Skill> skills = [
     Skill(title: "Flutter/Dart", value: 9.0),
     Skill(title: "Firebase", value: 8.0),
@@ -93,20 +118,81 @@ class MainController extends GetxController{
     Skill(title: "Flutter Web", value: 9.0),
     Skill(title: "Flutter Windows", value: 7.0),
   ];
-  
+
   final List<Service> services = [
     //add max 8 items for description
-    Service(icon: AppAssets.mobileAppDevelopmentIcon, title: "Mobile App Development", description: ['Flutter app development', 'Clean code with smooth states', 'Firebase integration', 'API integration', 'Responsive design', 'Deploy on store', 'app migration and cloning', 'maintenance and support'], startingFrom: "250"),
-    Service(icon: AppAssets.apiIcon, title: "Rest API Development (Node.js)", description: ['Rest API Development', 'Clean code with MVC pattern', 'email and other services', 'MySql Database', 'Mongo Database', 'Deploy on server', 'can handle VPS server with dockers', 'maintenance and support'], startingFrom: "200"),
-    Service(icon: AppAssets.webIcon, title: "Web Development (Flutter)", description: ['Single & multi page website', 'Fully responsive design', 'easily deployable on any hosting server', 'backend integration', 'Deploy on server', 'can handle VPS server with dockers', 'maintenance and support'], startingFrom: "2%0"),
-    Service(icon: AppAssets.deploymentIcon, title: "App Deployment", description: ['Deploy flutter android on Play Store', 'Deploy flutter iOS on App Store', 'Deploy flutter web on hosting server', 'Flutter windows app installer', 'maintenance and support'], startingFrom: "50"),
-    Service(icon: AppAssets.assistanceIcon, title: "Virtual Assistance", description: ['Flutter App Development', 'Cross-Platform Development', 'Technical Support', 'Code Review and Quality Assurance', 'Project Management', 'Training and Mentoring', 'Documentation and Reporting'], startingFrom: "150"),
+    Service(
+        icon: AppAssets.mobileAppDevelopmentIcon,
+        title: "Mobile App Development",
+        description: [
+          'Flutter app development',
+          'Clean code with smooth states',
+          'Firebase integration',
+          'API integration',
+          'Responsive design',
+          'Deploy on store',
+          'app migration and cloning',
+          'maintenance and support'
+        ],
+        startingFrom: "250"),
+    Service(
+        icon: AppAssets.apiIcon,
+        title: "Rest API Development (Node.js)",
+        description: [
+          'Rest API Development',
+          'Clean code with MVC pattern',
+          'email and other services',
+          'MySql Database',
+          'Mongo Database',
+          'Deploy on server',
+          'can handle VPS server with dockers',
+          'maintenance and support'
+        ],
+        startingFrom: "200"),
+    Service(
+        icon: AppAssets.webIcon,
+        title: "Web Development (Flutter)",
+        description: [
+          'Single & multi page website',
+          'Fully responsive design',
+          'easily deployable on any hosting server',
+          'backend integration',
+          'Deploy on server',
+          'can handle VPS server with dockers',
+          'maintenance and support'
+        ],
+        startingFrom: "2%0"),
+    Service(
+        icon: AppAssets.deploymentIcon,
+        title: "App Deployment",
+        description: [
+          'Deploy flutter android on Play Store',
+          'Deploy flutter iOS on App Store',
+          'Deploy flutter web on hosting server',
+          'Flutter windows app installer',
+          'maintenance and support'
+        ],
+        startingFrom: "50"),
+    Service(
+        icon: AppAssets.assistanceIcon,
+        title: "Virtual Assistance",
+        description: [
+          'Flutter App Development',
+          'Cross-Platform Development',
+          'Technical Support',
+          'Code Review and Quality Assurance',
+          'Project Management',
+          'Training and Mentoring',
+          'Documentation and Reporting'
+        ],
+        startingFrom: "150"),
   ];
 
   final List<Project> projects = [
     Project(
         title: "Walking Challenge App",
-        shortDescription: "Walking Challenge app to boost your health and fitness! Compete in exciting events and challenges, earn coins, and unlock rewards as you step towards a healthier lifestyle.",
+        shortDescription:
+            "Walking Challenge app to boost your health and fitness! Compete in exciting events and challenges, earn coins, and unlock rewards as you step towards a healthier lifestyle.",
         longDescription: '''
         <h1>50K + Downloads on Play Store</h1>
         <h2>Introduction:</h2>
@@ -137,12 +223,22 @@ class MainController extends GetxController{
         <h2>Conclusion:</h2>
         <p>By focusing on creating an engaging and motivating user interface, coupled with seamless state management using GetX, the Walking Challenge App UI Design project aims to inspire users to lead healthier and more active lifestyles through fun and rewarding walking challenges and events.</p>''',
         coverImage: AppAssets.coverImageProject1,
-        images: [AppAssets.project1Image1, AppAssets.project1Image2, AppAssets.project1Image3, AppAssets.project1Image4, AppAssets.project1Image5, AppAssets.project1Image6, AppAssets.project1Image7, AppAssets.project1Image8,],
-        url: "https://play.google.com/store/apps/details?id=com.walking.android"
-    ),
+        images: [
+          AppAssets.project1Image1,
+          AppAssets.project1Image2,
+          AppAssets.project1Image3,
+          AppAssets.project1Image4,
+          AppAssets.project1Image5,
+          AppAssets.project1Image6,
+          AppAssets.project1Image7,
+          AppAssets.project1Image8,
+        ],
+        url:
+            "https://play.google.com/store/apps/details?id=com.walking.android"),
     Project(
         title: "One Facilities",
-        shortDescription: "One Facilities is a service and maintenance provider app facilitating hassle-free bookings with preferred professionals. It integrates Google Fitness API for step counting, rewarding users for physical activity.",
+        shortDescription:
+            "One Facilities is a service and maintenance provider app facilitating hassle-free bookings with preferred professionals. It integrates Google Fitness API for step counting, rewarding users for physical activity.",
         longDescription: '''
         <h2>Introduction:</h2>
         <p>One Facilities is a comprehensive service and maintenance provider app designed to streamline the booking process for users seeking professional services. With a user-friendly interface, users can easily book services with their favorite professionals for selected hours, ensuring convenience and reliability. The app also incentivizes physical activity by rewarding users for their walking efforts, integrated seamlessly with Google Fitness API for accurate step counting.</p>
@@ -177,12 +273,35 @@ class MainController extends GetxController{
 
         ''',
         coverImage: AppAssets.coverImageProject2,
-        images: [AppAssets.project2Image1, AppAssets.project2Image2, AppAssets.project2Image3, AppAssets.project2Image4, AppAssets.project2Image5, AppAssets.project2Image6, AppAssets.project2Image7, AppAssets.project2Image8, AppAssets.project2Image9, AppAssets.project2Image10, AppAssets.project2Image11, AppAssets.project2Image12, AppAssets.project2Image13, AppAssets.project2Image14, AppAssets.project2Image15, AppAssets.project2Image16, AppAssets.project2Image17, AppAssets.project2Image18, AppAssets.project2Image19, AppAssets.project2Image20, AppAssets.project2Image21,],
-        url: "https://play.google.com/store/apps/details?id=com.the1bm.the_one_facilities_app"
-    ),
+        images: [
+          AppAssets.project2Image1,
+          AppAssets.project2Image2,
+          AppAssets.project2Image3,
+          AppAssets.project2Image4,
+          AppAssets.project2Image5,
+          AppAssets.project2Image6,
+          AppAssets.project2Image7,
+          AppAssets.project2Image8,
+          AppAssets.project2Image9,
+          AppAssets.project2Image10,
+          AppAssets.project2Image11,
+          AppAssets.project2Image12,
+          AppAssets.project2Image13,
+          AppAssets.project2Image14,
+          AppAssets.project2Image15,
+          AppAssets.project2Image16,
+          AppAssets.project2Image17,
+          AppAssets.project2Image18,
+          AppAssets.project2Image19,
+          AppAssets.project2Image20,
+          AppAssets.project2Image21,
+        ],
+        url:
+            "https://play.google.com/store/apps/details?id=com.the1bm.the_one_facilities_app"),
     Project(
         title: "IMS - HR Portal",
-        shortDescription: "The Information Management System with HR Portal is a comprehensive solution for managing company data and HR processes. Built with Flutter for web, it offers role-based access control and responsive design for efficient operations.",
+        shortDescription:
+            "The Information Management System with HR Portal is a comprehensive solution for managing company data and HR processes. Built with Flutter for web, it offers role-based access control and responsive design for efficient operations.",
         longDescription: '''
         <h2>Introduction:</h2>
         <p>The Information Management System with HR Portal is a comprehensive solution for managing all aspects of company information and HR processes. From company details and office locations to employee data and payroll management, the portal centralizes information and streamlines operations. With role-based access control, users can only access data relevant to their roles and permissions, ensuring data security and privacy.</p>
@@ -216,13 +335,47 @@ class MainController extends GetxController{
           
         ''',
         coverImage: AppAssets.project3Image3,
-        images: [AppAssets.project3Image1, AppAssets.project3Image2, AppAssets.project3Image3, AppAssets.project3Image4, AppAssets.project3Image5, AppAssets.project3Image6, AppAssets.project3Image7, AppAssets.project3Image8, AppAssets.project3Image9, AppAssets.project3Image10, AppAssets.project3Image11, AppAssets.project3Image12, AppAssets.project3Image13, AppAssets.project3Image14, AppAssets.project3Image15, AppAssets.project3Image16, AppAssets.project3Image17, AppAssets.project3Image18, AppAssets.project3Image19, AppAssets.project3Image20, AppAssets.project3Image21, AppAssets.project3Image22, AppAssets.project3Image23, AppAssets.project3Image24, AppAssets.project3Image25, AppAssets.project3Image26, AppAssets.project3Image27, AppAssets.project3Image28, AppAssets.project3Image29, AppAssets.project3Image30, AppAssets.project3Image31, AppAssets.project3Image32, AppAssets.project3Image33],
+        images: [
+          AppAssets.project3Image1,
+          AppAssets.project3Image2,
+          AppAssets.project3Image3,
+          AppAssets.project3Image4,
+          AppAssets.project3Image5,
+          AppAssets.project3Image6,
+          AppAssets.project3Image7,
+          AppAssets.project3Image8,
+          AppAssets.project3Image9,
+          AppAssets.project3Image10,
+          AppAssets.project3Image11,
+          AppAssets.project3Image12,
+          AppAssets.project3Image13,
+          AppAssets.project3Image14,
+          AppAssets.project3Image15,
+          AppAssets.project3Image16,
+          AppAssets.project3Image17,
+          AppAssets.project3Image18,
+          AppAssets.project3Image19,
+          AppAssets.project3Image20,
+          AppAssets.project3Image21,
+          AppAssets.project3Image22,
+          AppAssets.project3Image23,
+          AppAssets.project3Image24,
+          AppAssets.project3Image25,
+          AppAssets.project3Image26,
+          AppAssets.project3Image27,
+          AppAssets.project3Image28,
+          AppAssets.project3Image29,
+          AppAssets.project3Image30,
+          AppAssets.project3Image31,
+          AppAssets.project3Image32,
+          AppAssets.project3Image33
+        ],
         url: "https://hr-portal-tau.vercel.app/",
-        isWeb: true
-    ),
+        isWeb: true),
     Project(
         title: "Malaysian Products–Luxury Shop",
-        shortDescription: "Developed a comprehensive E-commerce application using Flutter, featuring user authentication, product catalog, detailed product pages, shopping cart, and order tracking. Integrated backend APIs for efficient data management, ensuring a seamless and secure shopping experience.",
+        shortDescription:
+            "Developed a comprehensive E-commerce application using Flutter, featuring user authentication, product catalog, detailed product pages, shopping cart, and order tracking. Integrated backend APIs for efficient data management, ensuring a seamless and secure shopping experience.",
         longDescription: '''
         <h2>Introduction:</h2>
         <p>I developed a comprehensive E-commerce application using Flutter, designed to provide an intuitive and seamless shopping experience. This app integrates a wide range of features to enhance user engagement and ensure smooth and secure transactions. The backend APIs were implemented to manage the application data efficiently.</p>
@@ -249,13 +402,32 @@ class MainController extends GetxController{
         <p>This E-commerce application showcases advanced Flutter development skills, integrating a variety of functionalities to deliver a high-performance, user-friendly, and secure shopping experience. The backend APIs efficiently manage the application data, demonstrating a deep understanding of modern app development practices and backend integration.</p>
         ''',
         coverImage: AppAssets.coverImageProject5,
-        images: [AppAssets.project5Image1, AppAssets.project5Image2, AppAssets.project5Image3, AppAssets.project5Image4, AppAssets.project5Image5, AppAssets.project5Image6, AppAssets.project5Image7, AppAssets.project5Image8, AppAssets.project5Image9, AppAssets.project5Image10, AppAssets.project5Image11, AppAssets.project5Image12, AppAssets.project5Image13, AppAssets.project5Image14, AppAssets.project5Image15, AppAssets.project5Image16, AppAssets.project5Image17],
+        images: [
+          AppAssets.project5Image1,
+          AppAssets.project5Image2,
+          AppAssets.project5Image3,
+          AppAssets.project5Image4,
+          AppAssets.project5Image5,
+          AppAssets.project5Image6,
+          AppAssets.project5Image7,
+          AppAssets.project5Image8,
+          AppAssets.project5Image9,
+          AppAssets.project5Image10,
+          AppAssets.project5Image11,
+          AppAssets.project5Image12,
+          AppAssets.project5Image13,
+          AppAssets.project5Image14,
+          AppAssets.project5Image15,
+          AppAssets.project5Image16,
+          AppAssets.project5Image17
+        ],
         isWeb: false,
-        url: "https://play.google.com/store/apps/details?id=com.malaysia.MalaysianProduct"
-    ),
+        url:
+            "https://play.google.com/store/apps/details?id=com.malaysia.MalaysianProduct"),
     Project(
         title: "IELTS Preparation App",
-        shortDescription: "Developed an IELTS preparation app with Flutter and GetX, featuring quizzes, speaking and writing practice, reading materials, listening lessons, and a comprehensive vocabulary section. It also includes band score definitions, a calculator, and essential IELTS tips.",
+        shortDescription:
+            "Developed an IELTS preparation app with Flutter and GetX, featuring quizzes, speaking and writing practice, reading materials, listening lessons, and a comprehensive vocabulary section. It also includes band score definitions, a calculator, and essential IELTS tips.",
         longDescription: '''
         <h1>1K + Downloads on Play Store</h1>
         <h2>Introduction</h2>
@@ -324,13 +496,30 @@ class MainController extends GetxController{
         
         ''',
         coverImage: AppAssets.coverImageProject6,
-        images: [AppAssets.project6Image1, AppAssets.project6Image2, AppAssets.project6Image3, AppAssets.project6Image4, AppAssets.project6Image5, AppAssets.project6Image6, AppAssets.project6Image7, AppAssets.project6Image8, AppAssets.project6Image9, AppAssets.project6Image10, AppAssets.project6Image11, AppAssets.project6Image12, AppAssets.project6Image13, AppAssets.project6Image14, AppAssets.project6Image15,],
+        images: [
+          AppAssets.project6Image1,
+          AppAssets.project6Image2,
+          AppAssets.project6Image3,
+          AppAssets.project6Image4,
+          AppAssets.project6Image5,
+          AppAssets.project6Image6,
+          AppAssets.project6Image7,
+          AppAssets.project6Image8,
+          AppAssets.project6Image9,
+          AppAssets.project6Image10,
+          AppAssets.project6Image11,
+          AppAssets.project6Image12,
+          AppAssets.project6Image13,
+          AppAssets.project6Image14,
+          AppAssets.project6Image15,
+        ],
         isWeb: false,
-        url: "https://play.google.com/store/apps/details?id=com.streamlogic.ielts_app"
-    ),
+        url:
+            "https://play.google.com/store/apps/details?id=com.streamlogic.ielts_app"),
     Project(
         title: "D-Share",
-        shortDescription: "D-Share is a seamless file sharing app built with Flutter, allowing users to share photos, videos, songs, files, and apps across various devices on the same network. Even without the app, users can receive data via a web browser using an IP address and port.",
+        shortDescription:
+            "D-Share is a seamless file sharing app built with Flutter, allowing users to share photos, videos, songs, files, and apps across various devices on the same network. Even without the app, users can receive data via a web browser using an IP address and port.",
         longDescription: '''
         <h2>Introduction</h2>
         <p>D-Share is a powerful and user-friendly file sharing app built with Flutter. Share photos, videos, songs, files, and apps effortlessly across various devices.</p>
@@ -360,13 +549,26 @@ class MainController extends GetxController{
     
         ''',
         coverImage: AppAssets.coverImageProject12,
-        images: [AppAssets.project12Image1, AppAssets.project12Image2, AppAssets.project12Image3, AppAssets.project12Image4, AppAssets.project12Image5, AppAssets.project12Image6, AppAssets.project12Image7, AppAssets.project12Image8, AppAssets.project12Image9, AppAssets.project12Image10, AppAssets.project12Image11],
+        images: [
+          AppAssets.project12Image1,
+          AppAssets.project12Image2,
+          AppAssets.project12Image3,
+          AppAssets.project12Image4,
+          AppAssets.project12Image5,
+          AppAssets.project12Image6,
+          AppAssets.project12Image7,
+          AppAssets.project12Image8,
+          AppAssets.project12Image9,
+          AppAssets.project12Image10,
+          AppAssets.project12Image11
+        ],
         isWeb: false,
-        url: "https://play.google.com/store/apps/details?id=com.techomatic.dshare"
-    ),
+        url:
+            "https://play.google.com/store/apps/details?id=com.techomatic.dshare"),
     Project(
         title: "Barcode & QR Code Scanner",
-        shortDescription: "Simplifying barcode and QR code tasks. Scan codes from camera or gallery. Generate QR codes for URLs, Wi-Fi, and more. Record history, share, and save codes with ease.",
+        shortDescription:
+            "Simplifying barcode and QR code tasks. Scan codes from camera or gallery. Generate QR codes for URLs, Wi-Fi, and more. Record history, share, and save codes with ease.",
         longDescription: '''
         <h2>Introduction</h2>
          <p>QRGenX is a versatile mobile application that simplifies the process of scanning and generating barcodes and QR codes with ease.</p>
@@ -404,13 +606,25 @@ class MainController extends GetxController{
         <p>Experience the convenience of barcode and QR code scanning and generation at your fingertips with QRGenX. Download the app now!</p>
         ''',
         coverImage: AppAssets.coverImageProject8,
-        images: [AppAssets.project8Image1, AppAssets.project8Image2, AppAssets.project8Image3, AppAssets.project8Image4, AppAssets.project8Image5, AppAssets.project8Image6, AppAssets.project8Image7, AppAssets.project8Image8, AppAssets.project8Image9, AppAssets.project8Image10,],
+        images: [
+          AppAssets.project8Image1,
+          AppAssets.project8Image2,
+          AppAssets.project8Image3,
+          AppAssets.project8Image4,
+          AppAssets.project8Image5,
+          AppAssets.project8Image6,
+          AppAssets.project8Image7,
+          AppAssets.project8Image8,
+          AppAssets.project8Image9,
+          AppAssets.project8Image10,
+        ],
         isWeb: false,
-        url: "https://play.google.com/store/apps/details?id=com.techomatic.barcode_scanner"
-    ),
+        url:
+            "https://play.google.com/store/apps/details?id=com.techomatic.barcode_scanner"),
     Project(
         title: "Sirat-e-Mustaqeem App",
-        shortDescription: "All-in-one Islamic app. Features include Allah's names, Quranic duas, prayer timings with notifications, Qibla direction, Surah collection, Six Kalma, favorites, dark/light theme, and multi-language support. Experience spiritual enrichment and convenience.",
+        shortDescription:
+            "All-in-one Islamic app. Features include Allah's names, Quranic duas, prayer timings with notifications, Qibla direction, Surah collection, Six Kalma, favorites, dark/light theme, and multi-language support. Experience spiritual enrichment and convenience.",
         longDescription: '''
         <h2>Introduction</h2>
          <p>Sirat-e-Mustaqeem is a comprehensive Islamic mobile application designed to assist users in practicing their faith and deepening their understanding of Islam. With a wide range of features, the app serves as a valuable companion for Muslims seeking guidance and inspiration in their daily lives.</p>
@@ -480,13 +694,29 @@ class MainController extends GetxController{
         <p>Experience the guidance and blessings of Islam with Sirat-e-Mustaqeem. Download the app now and embark on a journey of spiritual growth and enlightenment!</p>
         ''',
         coverImage: AppAssets.coverImageProject10,
-        images: [AppAssets.project10Image1, AppAssets.project10Image2, AppAssets.project10Image3, AppAssets.project10Image4, AppAssets.project10Image5, AppAssets.project10Image6, AppAssets.project10Image7, AppAssets.project10Image8, AppAssets.project10Image9, AppAssets.project10Image10, AppAssets.project10Image11, AppAssets.project10Image12, AppAssets.project10Image13, AppAssets.project10Image14,],
+        images: [
+          AppAssets.project10Image1,
+          AppAssets.project10Image2,
+          AppAssets.project10Image3,
+          AppAssets.project10Image4,
+          AppAssets.project10Image5,
+          AppAssets.project10Image6,
+          AppAssets.project10Image7,
+          AppAssets.project10Image8,
+          AppAssets.project10Image9,
+          AppAssets.project10Image10,
+          AppAssets.project10Image11,
+          AppAssets.project10Image12,
+          AppAssets.project10Image13,
+          AppAssets.project10Image14,
+        ],
         isWeb: false,
-        url: "https://www.mediafire.com/file/fyatcu62r0a9c71/sirat-e-mustaqeem.apk/file"
-    ),
+        url:
+            "https://www.mediafire.com/file/fyatcu62r0a9c71/sirat-e-mustaqeem.apk/file"),
     Project(
         title: "PetTag",
-        shortDescription: "PetTag is a free social app for pet owners, designed to help pets and their owners meet, socialize, and create lasting connections. Join us to swipe, like, meet new friends, and support animal shelters with 10% of our earnings donated to the ASPCA.",
+        shortDescription:
+            "PetTag is a free social app for pet owners, designed to help pets and their owners meet, socialize, and create lasting connections. Join us to swipe, like, meet new friends, and support animal shelters with 10% of our earnings donated to the ASPCA.",
         longDescription: '''
         <h2>Introduction</h2>
         <p>PetTag is the FREE exclusive social app for pet owners. Pets are a big part of our lives and identity, so doesn’t it make sense to look for someone special for you and your pet? We are happy to bring you a unique communal experience that brings people and pets together!</p>
@@ -517,13 +747,23 @@ class MainController extends GetxController{
     
         ''',
         coverImage: AppAssets.coverImageProject11,
-        images: [AppAssets.project11Image1, AppAssets.project11Image2, AppAssets.project11Image3, AppAssets.project11Image4, AppAssets.project11Image5, AppAssets.project11Image6, AppAssets.project11Image7, AppAssets.project11Image8, ],
+        images: [
+          AppAssets.project11Image1,
+          AppAssets.project11Image2,
+          AppAssets.project11Image3,
+          AppAssets.project11Image4,
+          AppAssets.project11Image5,
+          AppAssets.project11Image6,
+          AppAssets.project11Image7,
+          AppAssets.project11Image8,
+        ],
         isWeb: false,
-        url: "https://play.google.com/store/apps/details?id=com.pettag.utechware.socialapppettag"
-    ),
+        url:
+            "https://play.google.com/store/apps/details?id=com.pettag.utechware.socialapppettag"),
     Project(
         title: "Meal Over",
-        shortDescription: "Developed an IELTS preparation app with Flutter and GetX, featuring quizzes, speaking and writing practice, reading materials, listening lessons, and a comprehensive vocabulary section. It also includes band score definitions, a calculator, and essential IELTS tips.",
+        shortDescription:
+            "Developed an IELTS preparation app with Flutter and GetX, featuring quizzes, speaking and writing practice, reading materials, listening lessons, and a comprehensive vocabulary section. It also includes band score definitions, a calculator, and essential IELTS tips.",
         longDescription: '''
         <h2>Introduction:</h2>
           p>MealOver is a cutting-edge food delivery application designed to revolutionize the way users experience food ordering and delivery.</p>
@@ -566,13 +806,26 @@ class MainController extends GetxController{
           <p>Experience the convenience of ordering delicious meals at your fingertips with MealOver. Download the app now!</p>
         ''',
         coverImage: AppAssets.coverImageProject7,
-        images: [AppAssets.project7Image1, AppAssets.project7Image2, AppAssets.project7Image3, AppAssets.project7Image4, AppAssets.project7Image5, AppAssets.project7Image6, AppAssets.project7Image7, AppAssets.project7Image8, AppAssets.project7Image9, AppAssets.project7Image10, AppAssets.project7Image11, ],
+        images: [
+          AppAssets.project7Image1,
+          AppAssets.project7Image2,
+          AppAssets.project7Image3,
+          AppAssets.project7Image4,
+          AppAssets.project7Image5,
+          AppAssets.project7Image6,
+          AppAssets.project7Image7,
+          AppAssets.project7Image8,
+          AppAssets.project7Image9,
+          AppAssets.project7Image10,
+          AppAssets.project7Image11,
+        ],
         isWeb: false,
-        url: "https://www.mediafire.com/file/fnqt7xu43w4itcn/mealover.apk/file"
-    ),
+        url:
+            "https://www.mediafire.com/file/fnqt7xu43w4itcn/mealover.apk/file"),
     Project(
         title: "English Stories",
-        shortDescription: "Offers a rich collection of English stories for children, ranging from fairy tales to folktales. With dark and light mode options, bookmarking, text-to-speech, zoom functionality, and easy sharing, StoryTale provides an immersive and enjoyable reading experience for kids of all ages.",
+        shortDescription:
+            "Offers a rich collection of English stories for children, ranging from fairy tales to folktales. With dark and light mode options, bookmarking, text-to-speech, zoom functionality, and easy sharing, StoryTale provides an immersive and enjoyable reading experience for kids of all ages.",
         longDescription: '''
         <h2>Introduction</h2>
          <p>StoryTale is an engaging mobile application offering a wide collection of English stories for children of all ages. Dive into captivating narratives and let your imagination soar!</p>
@@ -612,14 +865,19 @@ class MainController extends GetxController{
         <p>Experience the magic of storytelling with StoryTale. Download the app now and embark on unforgettable adventures!</p>
         ''',
         coverImage: AppAssets.coverImageProject9,
-        images: [AppAssets.project9Image1, AppAssets.project9Image2, AppAssets.project9Image3, AppAssets.project9Image4, ],
+        images: [
+          AppAssets.project9Image1,
+          AppAssets.project9Image2,
+          AppAssets.project9Image3,
+          AppAssets.project9Image4,
+        ],
         isWeb: false,
-        url: "https://play.google.com/store/apps/details?id=com.streamlogic.english.stories"
-    ),
-
+        url:
+            "https://play.google.com/store/apps/details?id=com.streamlogic.english.stories"),
     Project(
         title: "Academy Manager",
-        shortDescription: "I developed an academy management app using Flutter and Firebase. Admin features include course, batch, and student management, fee tracking, task assignments, and notifications. Students can manage profiles, track course progress and fees, view tasks, and receive updates. The app uses email authentication, push notifications, and MVVM architecture with provider.",
+        shortDescription:
+            "I developed an academy management app using Flutter and Firebase. Admin features include course, batch, and student management, fee tracking, task assignments, and notifications. Students can manage profiles, track course progress and fees, view tasks, and receive updates. The app uses email authentication, push notifications, and MVVM architecture with provider.",
         longDescription: '''
         <h2>Introduction</h2>
         <p>This app is built for academies offering digital courses like digital marketing and mobile app development. It facilitates both administrative and student activities.</p>
@@ -656,13 +914,26 @@ class MainController extends GetxController{
         
         ''',
         coverImage: AppAssets.coverImageProject13,
-        images: [AppAssets.project13Image1, AppAssets.project13Image2, AppAssets.project13Image3, AppAssets.project13Image4, AppAssets.project13Image5, AppAssets.project13Image6, AppAssets.project13Image7, AppAssets.project13Image8, AppAssets.project13Image9, AppAssets.project13Image10, AppAssets.project13Image11],
+        images: [
+          AppAssets.project13Image1,
+          AppAssets.project13Image2,
+          AppAssets.project13Image3,
+          AppAssets.project13Image4,
+          AppAssets.project13Image5,
+          AppAssets.project13Image6,
+          AppAssets.project13Image7,
+          AppAssets.project13Image8,
+          AppAssets.project13Image9,
+          AppAssets.project13Image10,
+          AppAssets.project13Image11
+        ],
         isWeb: false,
-        url: "https://www.mediafire.com/file/idg2g7zt1ksafwe/academy+manager.apk/file"
-    ),
+        url:
+            "https://www.mediafire.com/file/idg2g7zt1ksafwe/academy+manager.apk/file"),
     Project(
         title: "Service Booking Website",
-        shortDescription: "The Service Booking Website, developed with Flutter for web, facilitates seamless online service appointments. Employing Provider for MVVM architecture and Firebase backend ensures reliability and scalability.",
+        shortDescription:
+            "The Service Booking Website, developed with Flutter for web, facilitates seamless online service appointments. Employing Provider for MVVM architecture and Firebase backend ensures reliability and scalability.",
         longDescription: '''
         <h2>Introduction:</h2>
         <p>The Service Booking Website is a user-friendly platform designed for seamless booking of various services. Built using Flutter for web, the website follows the MVVM architecture pattern with Provider for state management, ensuring robustness and scalability. Firebase is integrated as the backend, providing a secure and reliable data storage and authentication solution.</p>
@@ -692,72 +963,77 @@ class MainController extends GetxController{
 
         ''',
         coverImage: AppAssets.project4Image1,
-        images: [AppAssets.project4Image1, AppAssets.project4Image2, AppAssets.project4Image3, AppAssets.project4Image4, AppAssets.project4Image5, AppAssets.project4Image6, AppAssets.project4Image7, AppAssets.project4Image8,],
+        images: [
+          AppAssets.project4Image1,
+          AppAssets.project4Image2,
+          AppAssets.project4Image3,
+          AppAssets.project4Image4,
+          AppAssets.project4Image5,
+          AppAssets.project4Image6,
+          AppAssets.project4Image7,
+          AppAssets.project4Image8,
+        ],
         url: "https://the-one-facilities.vercel.app/#/Home",
-        isWeb: true
-    ),
+        isWeb: true),
   ];
 
   final List<Experience> experiences = [
     Experience(
         jobTitle: 'Desktop Application Developer',
-        start: DateTime(2019,12,01),
-        end: DateTime(2020,18,01),
+        start: DateTime(2019, 12, 01),
+        end: DateTime(2020, 08, 01),
         details: [
           'Orchestrated the development of robust C# desktop applications, specializing in Point of Sale systems and innovative food delivery management solutions for restaurants ensuring seamless operations and enhanced efficiency.',
           'Leveraged expertise as a C# desktop application developer to deliver tailored software solutions, optimizing restaurant management workflows and offering feature-rich Point of Sale systems that meet the specific needs of clients.',
         ],
         company: 'Professional Tech',
-        location: 'Okara, Pakistan'
-    ),
+        location: 'Okara, Pakistan'),
     Experience(
         jobTitle: 'Mobile Application Trainer',
-        start: DateTime(2020,09,01),
-        end: DateTime(2021,05,01),
+        start: DateTime(2020, 09, 01),
+        end: DateTime(2021, 05, 01),
         details: [
           'Spearheaded mobile app training initiatives for a government project, imparting essential skills in Flutter development, contributing to the capacity-building goals of the program.',
           'Played a pivotal role in equipping participants with the latest mobile app development techniques, ensuring alignment with industry standards and fostering a skilled workforce as part of a strategic government initiative.'
         ],
         company: 'Kamyab Jawan Program',
-        location: 'Okara, Pakistan'
-    ),
+        location: 'Okara, Pakistan'),
     Experience(
         jobTitle: 'Flutter Developer',
-        start: DateTime(2021,05,01),
-        end: DateTime(2022,05,01),
+        start: DateTime(2021, 05, 01),
+        end: DateTime(2022, 05, 01),
         details: [
-          'Executed diverse freelance projects encompassing Flutter mobile app development, delivering bespoke solutions aligned with client objectives.',
-          'Designed and implemented user-friendly solutions for business management, creating intuitive applications for both mobile and desktop platforms.'
+          'Lead a team of 4 developers, and monitor and contribute to the overall development process.'
+              'IELTS Preparation App: Developed a comprehensive IELTS preparation app that achieved over 1,000 downloads on the Play Store. Implemented SQLite for efficient data management and integrated text-to-speech features to enhance the learning experience for users.',
+          "Children's Stories App: Created an engaging stories app for children, which is gaining popularity on the Play Store. Utilized SQLite as the backend for content storage and added text-to-speech functionality to provide an immersive audio experience for young users."
+              'Barcode Scanner App: Built a versatile QR and barcode scanner app capable of generating both QR codes and barcodes. The app maintains a history of created and generated codes, with features to share and copy codes easily. This project showcases robust data handling using SQLite and seamless integration of sharing options.'
         ],
-        company: 'eFAIDA Technologies',
-        location: 'Okara, Pakistan'
-    ),
+        company: 'Stream Logics',
+        location: 'Multan, Pakistan'),
     Experience(
         jobTitle: 'Flutter Developer',
-        start: DateTime(2022,06,01),
-        end: DateTime(2023,06,01),
+        start: DateTime(2022, 06, 01),
+        end: DateTime(2023, 06, 01),
         details: [
-          'Engineered a top-tier food delivery app, harmonizing Flutter front-end with a resilient Node.js back-end for seamless order processing and an enriched user inter-face.',
-          'Spearheaded a cutting-edge job finder app, capitalizing on Firebase back-end for real-time data sync, personalized job recommendations.',
-          'Indicatively crafted a walking challenge app, amplifying user motivation in a distinctive fitness context.'
+          'Engineered a food delivery app, integrating Flutter front-end with Node.js back-end for seamless order processing.',
+          'Led development of a job finder app with real-time data sync and personalized job recommendations using Firebase.',
+          'Developed a walking challenge app to motivate users in a fitness context, it reached over 50,000 downloads on Play Store.'
         ],
         company: 'Software Hub',
-        location: 'Karachi, Pakistan (Remote)'
-    ),
+        location: 'Karachi, Pakistan (Remote)'),
     Experience(
         jobTitle: 'Flutter Developer - Part-Time',
-        start: DateTime(2023,05,01),
-        end: DateTime(2023,12,01),
+        start: DateTime(2023, 05, 01),
+        end: DateTime(2023, 12, 01),
         details: [
           'End-to-end app development using Firebase, REST APIs, and integration of real-time chat features.',
           'Utilizes Twilio API for audio and video calling functionalities.',
         ],
         company: 'XSquare Technology',
-        location: 'Gujrat, India (Remote)'
-    ),
+        location: 'Gujrat, India (Remote)'),
     Experience(
         jobTitle: 'Senior Flutter Developer',
-        start: DateTime(2023,06,01),
+        start: DateTime(2023, 06, 01),
         end: DateTime.now(),
         details: [
           'Developed advanced mobile and web apps, optimizing operations and user experience in cleaning and maintenance services.',
@@ -766,73 +1042,77 @@ class MainController extends GetxController{
           'Acted as both Flutter developer and back-end specialist, enhancing API performance by 15%.',
         ],
         company: 'The One Properties',
-        location: 'Ras Al Khaimah, UAE (Remote)'
-    ),
+        location: 'Ras Al Khaimah, UAE (Remote)'),
   ];
-  
+
   final List<Education> educations = [
     Education(
         degree: "Bachelor of Science Computer Science (BSCS)",
-        university: "Bahauddin Zakariya University - BZU",
-        location: "Multan, Pakistan",
+        university: "UNIVERSITY OF MANAGEMENT AND TECHNOLOGY ",
+        location: "LAHORE, Pakistan",
         details: [
-          'Focus on Software development and programming concepts',
-          'Developed a sophisticated Point of Sale system as a capstone project'
+          'Focus on Software development and programming concepts.',
+          'Developed a sophisticated Point of Sale system as a capstone project.'
         ],
-        start: DateTime(2015, 09,01),
-        end: DateTime(2019, 09, 01)
-    ),
+        start: DateTime(2016, 09, 01),
+        end: DateTime(2020, 09, 01)),
     Education(
         degree: "Master of Science Computer Science (MSCS)",
-        university: "University of Okara",
-        location: "Okara, Pakistan",
+        university: "UNIVERSITY OF MANAGEMENT AND TECHNOLOGY ",
+        location: "LAHORE, Pakistan",
         details: [
-          'Focus on Machine Learning and Deep Learning',
-          'Write thesis on Multimodal approach to detect deep fake videos'
+          'Focus on Machine Learning and Deep Learning.',
+          'Write thesis on Multimodal approach to detect deep fake videos.'
         ],
-        start: DateTime(2021, 09,01),
-        end: DateTime(2024, 02, 01)
-    ),
-  ];
-  
-  final List<Contact> contacts = [
-    Contact(icon: AppAssets.locationIcon, title: "Address", value: "Okara, Pakistan"),
-    Contact(icon: AppAssets.phoneIcon, title: "Phone", value: "+923089098067"),
-    Contact(icon: AppAssets.emailIcon, title: "Email", value: "mr.abdulrehman.ar@gmail.com"),
-    Contact(icon: AppAssets.whatsappIcon, title: "Whatsapp", value: "+923089098067"),
+        start: DateTime(2020, 12, 01),
+        end: DateTime(2021, 02, 01)),
   ];
 
-  final String aboutPara = '''Dynamic and results-driven Flutter Developer with over 3 years of extensive experience in designing and implementing high-performance mobile applications. Adept at transforming intricate designs and visionary concepts into visually stunning, user-centric applications. Passionate about delivering exceptional user experiences, I excel in both front-end and back-end development, leveraging a robust foundation in Dart, Flutter, and Node.js.
+  final List<Contact> contacts = [
+    Contact(
+        icon: AppAssets.locationIcon,
+        title: "Address",
+        value: "Okara, Pakistan"),
+    Contact(icon: AppAssets.phoneIcon, title: "Phone", value: "+923704304141"),
+    Contact(
+        icon: AppAssets.emailIcon,
+        title: "Email",
+        value: "ayzeetechloom@gmail.com"),
+    Contact(
+        icon: AppAssets.whatsappIcon,
+        title: "Whatsapp",
+        value: "+923704304141"),
+  ];
+
+  final String aboutPara =
+      '''Dynamic and results-driven Full Stack Developer with over 3 years of extensive experience in designing and implementing high-performance mobile applications. Adept at transforming intricate designs and visionary concepts into visually stunning, user-centric applications. Passionate about delivering exceptional user experiences, I excel in both front-end and back-end development, leveraging a robust foundation in Dart, Flutter, and Node.js.
 
   Throughout my career, I have successfully led and contributed to diverse projects, ranging from advanced mobile solutions for business management to innovative fitness and job-finding applications. My expertise extends to utilizing Firebase and real-time data synchronization, ensuring seamless app functionality and enhanced user engagement.
 
   With a proven track record of optimizing app performance, streamlining processes, and driving project success, I bring a strategic and innovative approach to problem-solving. My commitment to continuous learning and staying abreast of the latest industry trends empowers me to deliver cutting-edge solutions that meet and exceed client expectations.
 
   I thrive in collaborative environments, consistently demonstrating strong communication skills and a team-oriented mindset. As a proactive and adaptable professional, I am dedicated to contributing top-tier development skills to forward-thinking projects and organizations, ensuring impactful results and sustainable growth.
-  '''
-  ;
+  ''';
 
   //getters
   int get selectedSection => _selectedSection;
   bool get showAllProjects => _showAllProjects;
 
-
   //setters
-  set selectedSection(int val){
+  set selectedSection(int val) {
     _selectedSection = val;
     _scrollToWidget(val);
     update();
   }
 
-  set showAllProjects(bool val){
+  set showAllProjects(bool val) {
     _showAllProjects = val;
     update();
   }
 
-
-  findTheSelectedItemIndex(String item){
-    for(int i = 0; i < sectionsList.length; i++){
-      if(sectionsList[i].title == item){
+  findTheSelectedItemIndex(String item) {
+    for (int i = 0; i < sectionsList.length; i++) {
+      if (sectionsList[i].title == item) {
         _selectedSection = i;
       }
     }
@@ -842,47 +1122,49 @@ class MainController extends GetxController{
 
   void _scrollToWidget(int index) {
     double position = 350;
-    if(index == 2){
+    if (index == 2) {
       position = 600;
-    }
-    else if(index == 3){
+    } else if (index == 3) {
       position = 650;
-    }
-    else if(index == 4){
+    } else if (index == 4) {
       position = 650;
-    }
-    else if(index == 5){
+    } else if (index == 5) {
       position = 700;
-    }
-    else if(index == 6){
+    } else if (index == 6) {
       position = 880;
-    }
-    else if(index == 7){
+    } else if (index == 7) {
       position = 930;
     }
-    if(Get.width <= mobileWidth){
+    if (Get.width <= mobileWidth) {
       position += 650;
     }
     scrollController.animateTo(
-      index * position, // Adjust the value as needed (depends on your item height)
+      index *
+          position, // Adjust the value as needed (depends on your item height)
       duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
   }
 
-  hireMe()async{
-    await launchUrl(Uri.parse("https://www.upwork.com/freelancers/~0124249d5c292635ee?viewMode=1"), mode: LaunchMode.externalApplication);
+  hireMe() async {
+    await launchUrl(
+        Uri.parse(
+            "https://www.upwork.com/freelancers/~0124249d5c292635ee?viewMode=1"),
+        mode: LaunchMode.externalApplication);
   }
 
-  downloadCV()async{
-    await launchUrl(Uri.parse("https://drive.google.com/file/d/1Xx61KQTcrByxeQE3X8JGtyeiIoMqqLrJ/view?usp=sharing"), mode: LaunchMode.externalApplication);
+  downloadCV() async {
+    await launchUrl(
+        Uri.parse(
+            "https://drive.google.com/file/d/1Xx61KQTcrByxeQE3X8JGtyeiIoMqqLrJ/view?usp=sharing"),
+        mode: LaunchMode.externalApplication);
   }
 
   @override
   void onInit() {
     super.onInit();
-    experiences.sort((a,b) => b.start.compareTo(a.start));
-    educations.sort((a,b) => b.end.compareTo(a.end));
+    experiences.sort((a, b) => b.start.compareTo(a.start));
+    educations.sort((a, b) => b.end.compareTo(a.end));
     update();
   }
 }
