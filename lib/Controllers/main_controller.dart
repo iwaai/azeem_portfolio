@@ -991,109 +991,91 @@ class MainController extends GetxController {
 
   final List<Experience> experiences = [
     Experience(
-        jobTitle: 'Desktop Application Developer',
-        start: DateTime(2019, 12, 01),
-        end: DateTime(2020, 08, 01),
-        details: [
-          'Orchestrated the development of robust C# desktop applications, specializing in Point of Sale systems and innovative food delivery management solutions for restaurants ensuring seamless operations and enhanced efficiency.',
-          'Leveraged expertise as a C# desktop application developer to deliver tailored software solutions, optimizing restaurant management workflows and offering feature-rich Point of Sale systems that meet the specific needs of clients.',
-        ],
-        company: 'Professional Tech',
-        location: 'Okara, Pakistan'),
+      jobTitle: 'Flutter Developer',
+      company: 'LaunchBox Pakistan',
+      location: 'Pakistan (On-site)',
+      start: DateTime(2024, 10, 01),
+      end: DateTime.now(),
+      details: [
+        'Building and maintaining cross-platform mobile applications using Flutter and Firebase.',
+        'Collaborating with designers and backend teams to deliver high-quality, responsive UI/UX.',
+        'Implementing REST APIs, push notifications, and state management (Bloc/GetX).',
+        'Optimizing performance and improving app stability through efficient coding practices.',
+      ],
+    ),
     Experience(
-        jobTitle: 'Mobile Application Trainer',
-        start: DateTime(2020, 09, 01),
-        end: DateTime(2021, 05, 01),
-        details: [
-          'Spearheaded mobile app training initiatives for a government project, imparting essential skills in Flutter development, contributing to the capacity-building goals of the program.',
-          'Played a pivotal role in equipping participants with the latest mobile app development techniques, ensuring alignment with industry standards and fostering a skilled workforce as part of a strategic government initiative.'
-        ],
-        company: 'Kamyab Jawan Program',
-        location: 'Okara, Pakistan'),
+      jobTitle: 'Flutter Developer',
+      company: 'QistBazaar.pk',
+      location: 'Karachi, Pakistan',
+      start: DateTime(2022, 07, 01),
+      end: DateTime(2023, 05, 01),
+      details: [
+        'Developed and maintained the QistBazaar mobile app for installment-based shopping.',
+        'Integrated payment gateways, user authentication, and local storage using Hive & SharedPreferences.',
+        'Implemented Firebase Cloud Messaging for order updates and push notifications.',
+        'Improved app performance by optimizing build methods and reducing API call latency.',
+      ],
+    ),
     Experience(
-        jobTitle: 'Flutter Developer',
-        start: DateTime(2021, 05, 01),
-        end: DateTime(2022, 05, 01),
-        details: [
-          'Lead a team of 4 developers, and monitor and contribute to the overall development process.'
-              'IELTS Preparation App: Developed a comprehensive IELTS preparation app that achieved over 1,000 downloads on the Play Store. Implemented SQLite for efficient data management and integrated text-to-speech features to enhance the learning experience for users.',
-          "Children's Stories App: Created an engaging stories app for children, which is gaining popularity on the Play Store. Utilized SQLite as the backend for content storage and added text-to-speech functionality to provide an immersive audio experience for young users."
-              'Barcode Scanner App: Built a versatile QR and barcode scanner app capable of generating both QR codes and barcodes. The app maintains a history of created and generated codes, with features to share and copy codes easily. This project showcases robust data handling using SQLite and seamless integration of sharing options.'
-        ],
-        company: 'Stream Logics',
-        location: 'Multan, Pakistan'),
-    Experience(
-        jobTitle: 'Flutter Developer',
-        start: DateTime(2022, 06, 01),
-        end: DateTime(2023, 06, 01),
-        details: [
-          'Engineered a food delivery app, integrating Flutter front-end with Node.js back-end for seamless order processing.',
-          'Led development of a job finder app with real-time data sync and personalized job recommendations using Firebase.',
-          'Developed a walking challenge app to motivate users in a fitness context, it reached over 50,000 downloads on Play Store.'
-        ],
-        company: 'Software Hub',
-        location: 'Karachi, Pakistan (Remote)'),
-    Experience(
-        jobTitle: 'Flutter Developer - Part-Time',
-        start: DateTime(2023, 05, 01),
-        end: DateTime(2023, 12, 01),
-        details: [
-          'End-to-end app development using Firebase, REST APIs, and integration of real-time chat features.',
-          'Utilizes Twilio API for audio and video calling functionalities.',
-        ],
-        company: 'XSquare Technology',
-        location: 'Gujrat, India (Remote)'),
-    Experience(
-        jobTitle: 'Senior Flutter Developer',
-        start: DateTime(2023, 06, 01),
-        end: DateTime.now(),
-        details: [
-          'Developed advanced mobile and web apps, optimizing operations and user experience in cleaning and maintenance services.',
-          'Designed user-friendly solutions for business management, resulting in a 20% increase in user engagement.',
-          'Led the development of an HR portal, streamlining processes and improving efficiency by 25%.',
-          'Acted as both Flutter developer and back-end specialist, enhancing API performance by 15%.',
-        ],
-        company: 'The One Properties',
-        location: 'Ras Al Khaimah, UAE (Remote)'),
+      jobTitle: 'Mobile Application Developer',
+      company: 'Upwork',
+      location: 'Pakistan (Remote)',
+      start: DateTime(2023, 05, 01),
+      end: DateTime(2024, 10, 01),
+      details: [
+        'Delivered end-to-end Flutter app solutions for international clients.',
+        'Worked on Firebase integration, REST APIs, and custom reusable widgets.',
+        'Designed modern UI using Figma and implemented complex business logic using Bloc architecture.',
+        'Received consistent 5-star reviews for quality and timely project delivery.',
+      ],
+    ),
   ];
 
   final List<Education> educations = [
     Education(
-        degree: "Bachelor of Science Computer Science (BSCS)",
-        university: "UNIVERSITY OF MANAGEMENT AND TECHNOLOGY ",
-        location: "LAHORE, Pakistan",
-        details: [
-          'Focus on Software development and programming concepts.',
-          'Developed a sophisticated Point of Sale system as a capstone project.'
-        ],
-        start: DateTime(2016, 09, 01),
-        end: DateTime(2020, 09, 01)),
+      degree: "Bachelor of Science in Software Engineering (BSSE)",
+      university: "University of Sindh",
+      location: "Jamshoro, Pakistan",
+      details: [
+        'Focused on mobile application development, OOP, and software design principles.',
+        'Developed a Donation Mobile Application as the Final Year Project using Flutter and Firebase.'
+      ],
+      start: DateTime(2019, 09, 01),
+      end: DateTime(2022, 09, 01),
+    ),
     Education(
-        degree: "Master of Science Computer Science (MSCS)",
-        university: "UNIVERSITY OF MANAGEMENT AND TECHNOLOGY ",
-        location: "LAHORE, Pakistan",
-        details: [
-          'Focus on Machine Learning and Deep Learning.',
-          'Write thesis on Multimodal approach to detect deep fake videos.'
-        ],
-        start: DateTime(2020, 12, 01),
-        end: DateTime(2021, 02, 01)),
+      degree: "Higher Secondary Certificate (H.S.C) in Pre-Engineering",
+      university: "Board of Intermediate Education",
+      location: "Karachi, Pakistan",
+      details: [
+        'Studied mathematics, physics, and chemistry as core subjects.',
+      ],
+      start: DateTime(2017, 06, 01),
+      end: DateTime(2018, 06, 01),
+    ),
   ];
 
   final List<Contact> contacts = [
     Contact(
-        icon: AppAssets.locationIcon,
-        title: "Address",
-        value: "Okara, Pakistan"),
-    Contact(icon: AppAssets.phoneIcon, title: "Phone", value: "+923704304141"),
+      icon: AppAssets.locationIcon,
+      title: "Address",
+      value: "Karachi, Pakistan",
+    ),
     Contact(
-        icon: AppAssets.emailIcon,
-        title: "Email",
-        value: "ayzeetechloom@gmail.com"),
+      icon: AppAssets.phoneIcon,
+      title: "Phone",
+      value: "+92312-3510147",
+    ),
     Contact(
-        icon: AppAssets.whatsappIcon,
-        title: "Whatsapp",
-        value: "+923704304141"),
+      icon: AppAssets.emailIcon,
+      title: "Email",
+      value: "jibrantalib2121@gmail.com",
+    ),
+    Contact(
+      icon: AppAssets.whatsappIcon,
+      title: "WhatsApp",
+      value: "+92312-3510147",
+    ),
   ];
 
   final String aboutPara =

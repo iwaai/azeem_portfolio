@@ -20,8 +20,10 @@ class AppAssets {
   static const String uxIcon = "assets/images/uxIcon.svg";
   static const String hiIcon = "assets/images/hi.gif";
   static const String myPic = "assets/images/mypic.png";
-  static const String myPic1 = "assets/images/mypic2.png";
-  static const String myPic2 = "assets/images/test.png";
+  // static const String myPic1 = "assets/images/mypic2.png";
+  static const String myPic1 = "assets/images/dreamina-secondpic.png";
+  // static const String myPic2 = "assets/images/test.png";
+  static const String myPic2 = "assets/images/erasebg-transformed.png";
   static const String toolsImage = "assets/images/tools.png";
   static const String mobileAppDevelopmentIcon =
       "assets/images/mobileAppDevelopmentIcon.svg";

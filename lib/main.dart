@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
             return GetMaterialApp(
               debugShowCheckedModeBanner: false,
               initialBinding: InitialBindings(),
-              title: 'Azeem khan',
+              title: 'Jibran Talib',
               initialRoute: Routes.mainView,
               routes: AppPages.routes,
               builder: (context, child) {

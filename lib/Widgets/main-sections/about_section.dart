@@ -23,55 +23,22 @@ class AboutSection extends StatelessWidget {
               children: [
                 FB5Col(
                     classNames: 'col-12 col-lg-4 col-xl-4 p-4',
-                    child: Get.width <= mobileWidth
-                        ? Container(
-                            width: 300,
-                            height: 300,
-                            decoration: BoxDecoration(
-                                color: Colors.grey,
-                                shape: BoxShape.circle,
-                                border: Border.all(
-                                    color: Theme.of(context).primaryColor,
-                                    width: 4),
-                                image: const DecorationImage(
-                                  image: AssetImage(AppAssets.myPic1),
-                                  alignment: Alignment.bottomCenter,
-                                )),
-                          )
-                        : SizedBox(
-                            height: 500,
-                            child: Stack(
-                              alignment: Alignment.bottomCenter,
-                              children: [
-                                JellyAnim(
-                                  jellyCount: 2,
-                                  // radius: 50,
-                                  radius: Get.width < mobileWidth ? 200 : 200,
-                                  // allowOverFlow: true,
-                                  jellyPosition: JellyPosition.bottomCenter,
-
-                                  viewPortSize: Get.width < mobileWidth
-                                      ? const Size(400, 500)
-                                      : const Size(400, 500),
-
-                                  colors: [
-                                    Theme.of(context).primaryColor,
-                                    Colors.brown
-                                  ],
-                                  jellyCoordinates: 5,
-                                ),
-                                Container(
-                                  height: 600,
-                                  alignment: Alignment.center,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(4),
-                                      image: const DecorationImage(
-                                          image: AssetImage(AppAssets.myPic1),
-                                          alignment: Alignment.bottomCenter)),
-                                ),
-                              ],
+                    child: Container(
+                      width: 600,
+                      height: 400,
+                      decoration: BoxDecoration(
+                          color: Colors.grey,
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                              color: Theme.of(context).primaryColor, width: 4),
+                          image: const DecorationImage(
+                            fit: BoxFit.contain,
+                            image: AssetImage(
+                              AppAssets.myPic1,
                             ),
+                            alignment: Alignment.bottomCenter,
                           )),
+                    )),
                 FB5Col(
                     classNames:
                         'col-12 col-lg-7 col-xl-7 p-${Get.width <= mobileWidth ? "4" : "6"}',
