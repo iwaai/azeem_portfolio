@@ -92,7 +92,7 @@ class AboutSection extends StatelessWidget {
                               fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                         const Text(
-                          "I am Azeem Khan, a full stack developer.",
+                          "I am Jibran Talib, a full stack mobile application developer.",
                           style: TextStyle(
                               fontSize: 24, fontWeight: FontWeight.bold),
                         ),
@@ -125,6 +125,12 @@ class AboutSection extends StatelessWidget {
                             child: _codeWidget(
                                 title: "Better Experience",
                                 icon: AppAssets.uxIcon),
+                          ),
+                          FB5Col(
+                            classNames: 'col-12 col-xl-4 col-md-6 col-lg-6',
+                            child: _codeWidget(
+                                title: "Security First",
+                                icon: AppAssets.codeIcon),
                           ),
                         ]),
                         const SizedBox(

@@ -26,17 +26,17 @@ import '../Models/social_link.dart';
 class MainController extends GetxController {
   ScrollController scrollController = ScrollController();
   int _selectedSection = 0;
-  final String myName = "Azeem khan";
+  final String myName = "Jibran Talib";
   final List<SocialLink> socialLinks = [
     SocialLink(
         icon: AppAssets.emailIcon,
-        url: "mailto:ayzeetechloom@gmail.com",
+        url: "jibrantalib2121@gmail.com",
         tooltip: "Email"),
     SocialLink(
-        icon: AppAssets.phoneIcon, url: "tel:+923704304141", tooltip: "Phone"),
+        icon: AppAssets.phoneIcon, url: "tel:+923123510147", tooltip: "Phone"),
     SocialLink(
         icon: AppAssets.whatsappIcon,
-        url: "https://wa.me/+92370430414",
+        url: "https://wa.me/+923123510147",
         tooltip: "WhatsApp"),
     // SocialLink(
     //     icon: AppAssets.skypeIcon,
@@ -44,11 +44,11 @@ class MainController extends GetxController {
     //     tooltip: "Skype"),
     SocialLink(
         icon: AppAssets.linkedinIcon,
-        url: "https://www.linkedin.com/in/azeem-khan-85a854319/",
+        url: "https://www.linkedin.com/in/jibrantalib/",
         tooltip: "LinkedIn"),
     SocialLink(
         icon: AppAssets.githubIcon,
-        url: "https://github.com/AzeemKhan482",
+        url: "https://github.com/Jibran-Talib",
         tooltip: "Github"),
     // SocialLink(
     //     icon: AppAssets.stackoverflowIcon,
@@ -68,7 +68,7 @@ class MainController extends GetxController {
     //     tooltip: "X / Twitter"),
   ];
   final List<String> roles = [
-    'Full Stack Developer',
+    'Full Stack Mobile App Developer',
     'Node.js Api Developer',
     'Problem Solver',
     'I can build android apps',
@@ -99,24 +99,34 @@ class MainController extends GetxController {
   ];
 
   final List<Skill> skills = [
-    Skill(title: "Flutter/Dart", value: 9.0),
-    Skill(title: "Firebase", value: 8.0),
-    Skill(title: "Supabase", value: 7.0),
-    Skill(title: "SQLite", value: 7.0),
-    Skill(title: "Rest APIs Integration", value: 9.0),
-    Skill(title: "Rest APIs Development", value: 8.0),
+    // Core Flutter Development
+    Skill(title: "Flutter/Dart", value: 9.5),
+    Skill(title: "Flutter Android", value: 9.5),
+    Skill(title: "Flutter iOS", value: 9.0),
+    Skill(title: "App Store Deployment", value: 8.5),
+    Skill(title: "Play Store Deployment", value: 9.0),
     Skill(title: "State Management", value: 9.0),
-    Skill(title: "Provider", value: 9.0),
-    Skill(title: "Getx", value: 9.0),
-    Skill(title: "Google APIs", value: 7.0),
-    Skill(title: "MVC", value: 7.0),
-    Skill(title: "MVP", value: 8.0),
-    Skill(title: "MVVM", value: 9.0),
-    Skill(title: "Git Version Control", value: 7.0),
-    Skill(title: "Flutter Android", value: 9.0),
-    Skill(title: "Flutter iOS", value: 8.0),
-    Skill(title: "Flutter Web", value: 9.0),
-    Skill(title: "Flutter Windows", value: 7.0),
+    Skill(title: "Bloc/Cubit", value: 9.5),
+    Skill(title: "GetX", value: 8.5),
+    Skill(title: "MVVM", value: 9.5),
+    Skill(title: "Clean Architecture", value: 9.0),
+    Skill(title: "REST APIs Integration", value: 9.5),
+    Skill(title: "Firebase", value: 9.0),
+    Skill(title: "Supabase", value: 8.0),
+
+    // Testing & Quality
+    Skill(title: "Widget Testing", value: 8.0),
+    Skill(title: "CI/CD", value: 8.0),
+    Skill(title: "Code Obfuscation", value: 9.0),
+    Skill(title: "Anti-Reverse Engineering", value: 8.5),
+
+    // Tools & Services
+    Skill(title: "Git Version Control", value: 9.0),
+    Skill(title: "Google APIs", value: 8.5),
+    Skill(title: "App Store Deployment", value: 8.5),
+    Skill(title: "Play Store Deployment", value: 9.0),
+    Skill(title: "Flutter Web", value: 8.5),
+    Skill(title: "Flutter Windows", value: 8.0),
   ];
 
   final List<Service> services = [
@@ -125,14 +135,16 @@ class MainController extends GetxController {
         icon: AppAssets.mobileAppDevelopmentIcon,
         title: "Mobile App Development",
         description: [
-          'Flutter app development',
-          'Clean code with smooth states',
-          'Firebase integration',
-          'API integration',
-          'Responsive design',
-          'Deploy on store',
-          'app migration and cloning',
-          'maintenance and support'
+          'Enterprise-grade Flutter applications',
+          'Clean Architecture & SOLID principles',
+          'Advanced state management (Bloc/Cubit)',
+          'Quality assurance',
+          'Performance optimization',
+          'Security hardening & code obfuscation',
+          'Firebase & REST API integration',
+          'Scalable & maintainable codebase',
+          'App Store & Play Store deployment',
+          'support & maintenance',
         ],
         startingFrom: "250"),
     Service(
@@ -1085,14 +1097,15 @@ class MainController extends GetxController {
   ];
 
   final String aboutPara =
-      '''Dynamic and results-driven Full Stack Developer with over 3 years of extensive experience in designing and implementing high-performance mobile applications. Adept at transforming intricate designs and visionary concepts into visually stunning, user-centric applications. Passionate about delivering exceptional user experiences, I excel in both front-end and back-end development, leveraging a robust foundation in Dart, Flutter, and Node.js.
+      '''Hi, I'm Jibran Talib, a Flutter Developer with 2+ years of experience building secure, fast, and scalable mobile applications. I specialize in creating custom apps including AI-powered solutions, e-commerce platforms, business management systems, fintech apps, and booking applications.
 
-  Throughout my career, I have successfully led and contributed to diverse projects, ranging from advanced mobile solutions for business management to innovative fitness and job-finding applications. My expertise extends to utilizing Firebase and real-time data synchronization, ensuring seamless app functionality and enhanced user engagement.
+I focus on writing clean, production-ready code that's easy to maintain and grows with your business. Every app I build is optimized for performance, thoroughly tested, and protected with advanced security features to keep your data safe from threats.
 
-  With a proven track record of optimizing app performance, streamlining processes, and driving project success, I bring a strategic and innovative approach to problem-solving. My commitment to continuous learning and staying abreast of the latest industry trends empowers me to deliver cutting-edge solutions that meet and exceed client expectations.
+Using modern technologies like Flutter, Firebase, REST APIs, and Clean Architecture, I create apps that work smoothly on Android, iOS, and web platforms. I also build AI-integrated applications that bring smart features to your business.
 
-  I thrive in collaborative environments, consistently demonstrating strong communication skills and a team-oriented mindset. As a proactive and adaptable professional, I am dedicated to contributing top-tier development skills to forward-thinking projects and organizations, ensuring impactful results and sustainable growth.
-  ''';
+My development process includes proper testing, code optimization, secure implementations, and scalable architecture. I set up automated deployments and provide ongoing support after your app goes live.
+
+Whether you need an AI-powered app, secure fintech solution, or any custom mobile application, I deliver professional results with clean code and user-friendly designs. Let's turn your ideas into successful apps! Feel free to contact me before placing an order to discuss your project.''';
 
   //getters
   int get selectedSection => _selectedSection;
