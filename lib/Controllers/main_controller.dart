@@ -1,7 +1,7 @@
-import 'package:abdulrehman/Constants/dimensions.dart';
-import 'package:abdulrehman/Widgets/main-sections/contact_section.dart';
-import 'package:abdulrehman/Widgets/main-sections/education_section.dart';
-import 'package:abdulrehman/Widgets/main-sections/experience_section.dart';
+import 'package:jibrantalib/Constants/dimensions.dart';
+import 'package:jibrantalib/Widgets/main-sections/contact_section.dart';
+import 'package:jibrantalib/Widgets/main-sections/education_section.dart';
+import 'package:jibrantalib/Widgets/main-sections/experience_section.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../Models/contact.dart';
@@ -56,7 +56,7 @@ class MainController extends GetxController {
     //     tooltip: "Stack Over Flow"),
     // SocialLink(
     //     icon: AppAssets.mediumIcon,
-    //     url: "https://medium.com/@mr.abdulrehman.ar",
+    //     url: "https://medium.com/@mr.jibrantalib.ar",
     //     tooltip: "Medium"),
     // SocialLink(
     //     icon: AppAssets.youtubeIcon,
@@ -64,7 +64,7 @@ class MainController extends GetxController {
     //     tooltip: "Youtube"),
     // SocialLink(
     //     icon: AppAssets.xIcon,
-    //     url: "https://x.com/mr_AbdulRehman1",
+    //     url: "https://x.com/mr_jibrantalib1",
     //     tooltip: "X / Twitter"),
   ];
   final List<String> roles = [
@@ -317,7 +317,7 @@ class MainController extends GetxController {
         longDescription: '''
         <h2>Introduction:</h2>
         <p>The Information Management System with HR Portal is a comprehensive solution for managing all aspects of company information and HR processes. From company details and office locations to employee data and payroll management, the portal centralizes information and streamlines operations. With role-based access control, users can only access data relevant to their roles and permissions, ensuring data security and privacy.</p>
-        <strong>Email : mr.abdulrehman.ar@gmail.com</strong></br>
+        <strong>Email : jibrantalib2121@gmail.com</strong></br>
         <strong>Pass : 12345678</strong>
         <h2>Key Features:</h2>
         <ul>
@@ -1007,8 +1007,8 @@ class MainController extends GetxController {
       jobTitle: 'Flutter Developer',
       company: 'QistBazaar.pk',
       location: 'Karachi, Pakistan',
-      start: DateTime(2022, 07, 01),
-      end: DateTime(2023, 05, 01),
+      start: DateTime(2023, 05, 01),
+      end: DateTime(2024, 10, 01),
       details: [
         'Developed and maintained the QistBazaar mobile app for installment-based shopping.',
         'Integrated payment gateways, user authentication, and local storage using Hive & SharedPreferences.',
@@ -1020,8 +1020,8 @@ class MainController extends GetxController {
       jobTitle: 'Mobile Application Developer',
       company: 'Upwork',
       location: 'Pakistan (Remote)',
-      start: DateTime(2023, 05, 01),
-      end: DateTime(2024, 10, 01),
+      start: DateTime(2022, 07, 01),
+      end: DateTime(2023, 05, 01),
       details: [
         'Delivered end-to-end Flutter app solutions for international clients.',
         'Worked on Firebase integration, REST APIs, and custom reusable widgets.',

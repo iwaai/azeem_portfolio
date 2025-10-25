@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.techomatic" "\0"
-            VALUE "FileDescription", "abdulrehman" "\0"
+            VALUE "FileDescription", "jibrantalib" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "abdulrehman" "\0"
+            VALUE "InternalName", "jibrantalib" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.techomatic. All rights reserved." "\0"
-            VALUE "OriginalFilename", "abdulrehman.exe" "\0"
-            VALUE "ProductName", "abdulrehman" "\0"
+            VALUE "OriginalFilename", "jibrantalib.exe" "\0"
+            VALUE "ProductName", "jibrantalib" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -1,4 +1,4 @@
-package com.techomatic.abdulrehman
+package com.techomatic.jibrantalib
 
 import io.flutter.embedding.android.FlutterActivity
 

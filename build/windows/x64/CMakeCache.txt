@@ -56,7 +56,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=D:/Flutter projects/jibran_portfolio/build/windows/x64/CMakeFiles/pkgRedirects
 
 //...
-CMAKE_INSTALL_PREFIX:PATH=$<TARGET_FILE_DIR:abdulrehman>
+CMAKE_INSTALL_PREFIX:PATH=$<TARGET_FILE_DIR:jibrantalib>
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe
@@ -91,7 +91,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=abdulrehman
+CMAKE_PROJECT_NAME:STATIC=jibrantalib
 
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=rc
@@ -168,13 +168,13 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 FLUTTER_TARGET_PLATFORM:UNINITIALIZED=windows-x64
 
 //Value Computed by CMake
-abdulrehman_BINARY_DIR:STATIC=D:/Flutter projects/jibran_portfolio/build/windows/x64
+jibrantalib_BINARY_DIR:STATIC=D:/Flutter projects/jibran_portfolio/build/windows/x64
 
 //Value Computed by CMake
-abdulrehman_IS_TOP_LEVEL:STATIC=ON
+jibrantalib_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-abdulrehman_SOURCE_DIR:STATIC=D:/Flutter projects/jibran_portfolio/windows
+jibrantalib_SOURCE_DIR:STATIC=D:/Flutter projects/jibran_portfolio/windows
 
 //Value Computed by CMake
 runner_BINARY_DIR:STATIC=D:/Flutter projects/jibran_portfolio/build/windows/x64/runner

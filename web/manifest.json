@@ -1,11 +1,11 @@
 {
-    "name": "abdulrehman",
-    "short_name": "abdulrehman",
+    "name": "jibrantalib",
+    "short_name": "jibrantalib",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "mr.abdulrehman.ar@gmail.com porfolio build in flutter",
+    "description": "jibrantalib2121@gmail.com porfolio build in flutter",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

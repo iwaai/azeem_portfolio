@@ -1,4 +1,4 @@
-import 'package:abdulrehman/Views/main_view.dart';
+import 'package:jibrantalib/Views/main_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'app_routes.dart';

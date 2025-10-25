@@ -1,5 +1,5 @@
-import 'package:abdulrehman/Constants/app_colors.dart';
-import 'package:abdulrehman/Controllers/main_controller.dart';
+import 'package:jibrantalib/Constants/app_colors.dart';
+import 'package:jibrantalib/Controllers/main_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

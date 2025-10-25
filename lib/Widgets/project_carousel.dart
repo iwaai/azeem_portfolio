@@ -1,4 +1,4 @@
-import 'package:abdulrehman/Constants/dimensions.dart';
+import 'package:jibrantalib/Constants/dimensions.dart';
 import 'package:carousel_slider/carousel_slider.dart' as slider;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

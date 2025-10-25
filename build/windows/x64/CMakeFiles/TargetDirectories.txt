@@ -5,7 +5,7 @@ D:/Flutter projects/jibran_portfolio/build/windows/x64/flutter/CMakeFiles/flutte
 D:/Flutter projects/jibran_portfolio/build/windows/x64/flutter/CMakeFiles/flutter_wrapper_app.dir
 D:/Flutter projects/jibran_portfolio/build/windows/x64/flutter/CMakeFiles/flutter_assemble.dir
 D:/Flutter projects/jibran_portfolio/build/windows/x64/flutter/CMakeFiles/INSTALL.dir
-D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/CMakeFiles/abdulrehman.dir
+D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/CMakeFiles/jibrantalib.dir
 D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/CMakeFiles/INSTALL.dir
 D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/CMakeFiles/ALL_BUILD.dir
 D:/Flutter projects/jibran_portfolio/build/windows/x64/plugins/url_launcher_windows/CMakeFiles/url_launcher_windows_plugin.dir

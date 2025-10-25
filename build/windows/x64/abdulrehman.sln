@@ -20,7 +20,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vc
 	ProjectSection(ProjectDependencies) = postProject
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "abdulrehman", "runner\abdulrehman.vcxproj", "{DA4A26E6-3A87-370E-B47A-FB82FEF384CC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jibrantalib", "runner\jibrantalib.vcxproj", "{DA4A26E6-3A87-370E-B47A-FB82FEF384CC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2FC9E77A-5011-34F4-BD26-58A0537DAF5D} = {2FC9E77A-5011-34F4-BD26-58A0537DAF5D}
 		{0FBFC590-C537-38B4-8F87-43FC0E2F04D0} = {0FBFC590-C537-38B4-8F87-43FC0E2F04D0}

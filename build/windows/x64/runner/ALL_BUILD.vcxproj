@@ -141,9 +141,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\Flutter projects\jibran_portfolio\build\windows\x64\runner\abdulrehman.vcxproj">
+    <ProjectReference Include="D:\Flutter projects\jibran_portfolio\build\windows\x64\runner\jibrantalib.vcxproj">
       <Project>{DA4A26E6-3A87-370E-B47A-FB82FEF384CC}</Project>
-      <Name>abdulrehman</Name>
+      <Name>jibrantalib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,4 +1,4 @@
-import 'package:abdulrehman/Constants/dimensions.dart';
+import 'package:jibrantalib/Constants/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bootstrap5/flutter_bootstrap5.dart';
 import 'package:get/get.dart';
@@ -14,14 +14,17 @@ class MyAppBar extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return SizedBox(
       width: size.width,
-      child:  Row(
+      child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const NavbarLogo(),
-          Get.width > mobileWidth ? const SizedBox(width: 50,): const SizedBox(),
-          Get.width <= mobileWidth ? const SizedBox() :
-          const NavbarItems()
+          Get.width > mobileWidth
+              ? const SizedBox(
+                  width: 50,
+                )
+              : const SizedBox(),
+          Get.width <= mobileWidth ? const SizedBox() : const NavbarItems()
         ],
       ),
     );

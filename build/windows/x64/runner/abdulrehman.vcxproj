@@ -22,7 +22,7 @@
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
-    <ProjectName>abdulrehman</ProjectName>
+    <ProjectName>jibrantalib</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -51,20 +51,20 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Flutter projects\jibran_portfolio\build\windows\x64\runner\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">abdulrehman.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">abdulrehman</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jibrantalib.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">jibrantalib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\Flutter projects\jibran_portfolio\build\windows\x64\runner\Profile\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">abdulrehman.dir\Profile\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">abdulrehman</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">jibrantalib.dir\Profile\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">jibrantalib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Flutter projects\jibran_portfolio\build\windows\x64\runner\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">abdulrehman.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">abdulrehman</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jibrantalib.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">jibrantalib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
@@ -110,8 +110,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Debug/abdulrehman.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Debug/abdulrehman.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Debug/jibrantalib.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Debug/jibrantalib.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -163,8 +163,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Profile/abdulrehman.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Profile/abdulrehman.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Profile/jibrantalib.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Profile/jibrantalib.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -216,8 +216,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Release/abdulrehman.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Release/abdulrehman.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Release/jibrantalib.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Flutter projects/jibran_portfolio/build/windows/x64/runner/Release/jibrantalib.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>

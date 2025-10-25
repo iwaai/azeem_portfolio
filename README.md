@@ -1,6 +1,6 @@
-# abdulrehman
+# jibrantalib
 
-mr.abdulrehman.ar@gmail.com porfolio build in flutter
+jibrantalib2121@gmail.com porfolio build in flutter
 
 ## Getting Started
 
